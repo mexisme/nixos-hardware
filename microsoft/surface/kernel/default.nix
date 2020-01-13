@@ -160,10 +160,15 @@ let
     #   ];
     # };
 
-    linux_5_4 = {
-      # TODO: Use explicit Linux versions, instead of leveraging NixOS:
-      # kernelPackages = pkgs.linuxPackages_5_4;
-      kernelPackages = pkgs.linuxPackages_latest;
+    linux_5_4_7 = {
+      kernelPackages = (with pkgs;
+        recurseIntoAttrs (
+          linuxPackagesFor (
+            callPackage ./linux-5.4.7.nix { kernelPatches = []; }
+          )
+        )
+      );
+
       kernelPatches = [
         {
           name = "ms-surface/0001-ioremap_uc";
@@ -197,6 +202,6 @@ let
     };
   };
 in {
-  boot.kernelPackages = kernelVersions.linux_5_4.kernelPackages;
-  boot.kernelPatches = kernelVersions.linux_5_4.kernelPatches;
+  boot.kernelPackages = kernelVersions.linux_5_4_7.kernelPackages;
+  boot.kernelPatches = kernelVersions.linux_5_4_7.kernelPatches;
 }
