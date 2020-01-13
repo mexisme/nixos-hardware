@@ -4,5 +4,5 @@
     ./kernel
     ./firmware
     ./hardware_configuration.nix
-  ]
+  ];
 }
