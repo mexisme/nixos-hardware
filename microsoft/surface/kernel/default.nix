@@ -243,8 +243,51 @@ let
         }
       ];
     };
+
+    linux_5_4_13 = {
+      kernelPackages = (with pkgs;
+        recurseIntoAttrs (
+          linuxPackagesFor (
+            callPackage ./linux-5.4.13.nix {
+              kernelPatches = [
+                kernelPatches.bridge_stp_helper
+                kernelPatches.request_key_helper
+                kernelPatches.export_kernel_fpu_functions."5.3"
+              ];
+            }
+          )
+        )
+      );
+
+      kernelPatches = [
+        {
+          name = "ms-surface/0001-ioremap_uc";
+          patch = ./5.4/0001-ioremap_uc.patch;
+        }
+        {
+          name = "ms-surface/0003-surface-acpi";
+          patch = ./5.4/0003-surface-acpi.patch;
+        }
+        {
+          name = "ms-surface/0004-surface3-power";
+          patch = ./5.4/0004-surface3-power.patch;
+        }
+        {
+          name = "ms-surface/0005-surface-lte";
+          patch = ./5.4/0005-surface-lte.patch;
+        }
+        {
+          name = "ms-surface/0006-wifi";
+          patch = ./5.4/0006-wifi.patch;
+        }
+        {
+          name = "ms-surface/0007-surface3-spi-dma";
+          patch = ./5.4/0007-surface3-spi-dma.patch;
+        }
+      ];
+    };
   };
 in {
-  boot.kernelPackages = kernelVersions.linux_5_4_7.kernelPackages;
-  boot.kernelPatches = kernelVersions.linux_5_4_7.kernelPatches;
+  boot.kernelPackages = kernelVersions.linux_5_4_13.kernelPackages;
+  boot.kernelPatches = kernelVersions.linux_5_4_13.kernelPatches;
 }
