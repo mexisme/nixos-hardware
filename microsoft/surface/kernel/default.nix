@@ -358,28 +358,29 @@ let
       );
 
       kernelPatches = [
-        {
-          name = "microsoft-surface-config";
-          extraConfig = ''
-            SURFACE_SAM m
-            SURFACE_SAM_SSH m
-            SURFACE_SAM_SSH_DEBUG_DEVICE y
-            SURFACE_SAM_SAN m
-            SURFACE_SAM_VHF m
-            SURFACE_SAM_HPS m
-            SURFACE_SAM_SID m
-            SURFACE_SAM_SID_GPELID m
-            SURFACE_SAM_SID_PERFMODE m
-            SURFACE_SAM_SID_VHF m
-            SURFACE_SAM_SID_POWER m
-            TOUCHSCREEN_IPTS m
-            INPUT_SOC_BUTTON_ARRAY m
-            SURFACE_3_POWER_OPREGION m
-            SURFACE_3_BUTTON m
-            SURFACE_3_POWER_OPREGION m
-            SURFACE_PRO3_BUTTON m
-          '';
-        }
+        # {
+        #   name = "microsoft-surface-config";
+        #   patch = null;
+        #   extraConfig = ''
+        #     SURFACE_SAM m
+        #     SURFACE_SAM_SSH m
+        #     SURFACE_SAM_SSH_DEBUG_DEVICE y
+        #     SURFACE_SAM_SAN m
+        #     SURFACE_SAM_VHF m
+        #     SURFACE_SAM_HPS m
+        #     SURFACE_SAM_SID m
+        #     SURFACE_SAM_SID_GPELID m
+        #     SURFACE_SAM_SID_PERFMODE m
+        #     SURFACE_SAM_SID_VHF m
+        #     SURFACE_SAM_SID_POWER m
+        #     TOUCHSCREEN_IPTS m
+        #     INPUT_SOC_BUTTON_ARRAY m
+        #     SURFACE_3_POWER_OPREGION m
+        #     SURFACE_3_BUTTON m
+        #     SURFACE_3_POWER_OPREGION m
+        #     SURFACE_PRO3_BUTTON m
+        #   '';
+        # }
         {
           name = "ms-surface/0001-surface3-power";
           patch = ./5.4/0001-surface3-power.patch;
