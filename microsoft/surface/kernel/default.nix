@@ -171,32 +171,32 @@ let
 
       kernelPatches = [
         {
-          name = "ms-surface/0001-ioremap_uc";
-          patch = ./5.4/0001-ioremap_uc.patch;
+          name = "ms-surface/0001-surface3-power";
+          patch = ./5.4/0001-surface3-power.patch;
         }
         {
-          name = "ms-surface/0002-hid";
-          patch = ./5.4/0002-hid.patch;
+          name = "ms-surface/0002-surface3-spi";
+          patch = ./5.4/0002-surface3-spi.patch;
         }
         {
-          name = "ms-surface/0003-surface-acpi";
-          patch = ./5.4/0003-surface-acpi.patch;
+          name = "ms-surface/0003-surface3-oemb";
+          patch = ./5.4/0003-surface3-oemb.patch;
         }
         {
-          name = "ms-surface/0004-surface3-power";
-          patch = ./5.4/0004-surface3-power.patch;
+          name = "ms-surface/0004-ioremap_uc";
+          patch = ./5.4/0004-ioremap_uc.patch;
         }
         {
-          name = "ms-surface/0005-surface-lte";
-          patch = ./5.4/0005-surface-lte.patch;
+          name = "ms-surface/0005-surface-sam";
+          patch = ./5.4/0005-surface-sam.patch;
         }
         {
-          name = "ms-surface/0006-wifi";
-          patch = ./5.4/0006-wifi.patch;
+          name = "ms-surface/0006-surface-lte";
+          patch = ./5.4/0006-surface-lte.patch;
         }
         {
-          name = "ms-surface/0007-surface3-spi-dma";
-          patch = ./5.4/0007-surface3-spi-dma.patch;
+          name = "ms-surface/0007-wifi";
+          patch = ./5.4/0007-wifi.patch;
         }
       ];
     };
@@ -218,28 +218,32 @@ let
 
       kernelPatches = [
         {
-          name = "ms-surface/0001-ioremap_uc";
-          patch = ./5.4/0001-ioremap_uc.patch;
+          name = "ms-surface/0001-surface3-power";
+          patch = ./5.4/0001-surface3-power.patch;
         }
         {
-          name = "ms-surface/0003-surface-acpi";
-          patch = ./5.4/0003-surface-acpi.patch;
+          name = "ms-surface/0002-surface3-spi";
+          patch = ./5.4/0002-surface3-spi.patch;
         }
         {
-          name = "ms-surface/0004-surface3-power";
-          patch = ./5.4/0004-surface3-power.patch;
+          name = "ms-surface/0003-surface3-oemb";
+          patch = ./5.4/0003-surface3-oemb.patch;
         }
         {
-          name = "ms-surface/0005-surface-lte";
-          patch = ./5.4/0005-surface-lte.patch;
+          name = "ms-surface/0004-ioremap_uc";
+          patch = ./5.4/0004-ioremap_uc.patch;
         }
         {
-          name = "ms-surface/0006-wifi";
-          patch = ./5.4/0006-wifi.patch;
+          name = "ms-surface/0005-surface-sam";
+          patch = ./5.4/0005-surface-sam.patch;
         }
         {
-          name = "ms-surface/0007-surface3-spi-dma";
-          patch = ./5.4/0007-surface3-spi-dma.patch;
+          name = "ms-surface/0006-surface-lte";
+          patch = ./5.4/0006-surface-lte.patch;
+        }
+        {
+          name = "ms-surface/0007-wifi";
+          patch = ./5.4/0007-wifi.patch;
         }
       ];
     };
@@ -261,28 +265,32 @@ let
 
       kernelPatches = [
         {
-          name = "ms-surface/0001-ioremap_uc";
-          patch = ./5.4/0001-ioremap_uc.patch;
+          name = "ms-surface/0001-surface3-power";
+          patch = ./5.4/0001-surface3-power.patch;
         }
         {
-          name = "ms-surface/0003-surface-acpi";
-          patch = ./5.4/0003-surface-acpi.patch;
+          name = "ms-surface/0002-surface3-spi";
+          patch = ./5.4/0002-surface3-spi.patch;
         }
         {
-          name = "ms-surface/0004-surface3-power";
-          patch = ./5.4/0004-surface3-power.patch;
+          name = "ms-surface/0003-surface3-oemb";
+          patch = ./5.4/0003-surface3-oemb.patch;
         }
         {
-          name = "ms-surface/0005-surface-lte";
-          patch = ./5.4/0005-surface-lte.patch;
+          name = "ms-surface/0004-ioremap_uc";
+          patch = ./5.4/0004-ioremap_uc.patch;
         }
         {
-          name = "ms-surface/0006-wifi";
-          patch = ./5.4/0006-wifi.patch;
+          name = "ms-surface/0005-surface-sam";
+          patch = ./5.4/0005-surface-sam.patch;
         }
         {
-          name = "ms-surface/0007-surface3-spi-dma";
-          patch = ./5.4/0007-surface3-spi-dma.patch;
+          name = "ms-surface/0006-surface-lte";
+          patch = ./5.4/0006-surface-lte.patch;
+        }
+        {
+          name = "ms-surface/0007-wifi";
+          patch = ./5.4/0007-wifi.patch;
         }
       ];
     };
@@ -304,28 +312,32 @@ let
 
       kernelPatches = [
         {
-          name = "ms-surface/0001-ioremap_uc";
-          patch = ./5.4/0001-ioremap_uc.patch;
+          name = "ms-surface/0001-surface3-power";
+          patch = ./5.4/0001-surface3-power.patch;
         }
         {
-          name = "ms-surface/0003-surface-acpi";
-          patch = ./5.4/0003-surface-acpi.patch;
+          name = "ms-surface/0002-surface3-spi";
+          patch = ./5.4/0002-surface3-spi.patch;
         }
         {
-          name = "ms-surface/0004-surface3-power";
-          patch = ./5.4/0004-surface3-power.patch;
+          name = "ms-surface/0003-surface3-oemb";
+          patch = ./5.4/0003-surface3-oemb.patch;
         }
         {
-          name = "ms-surface/0005-surface-lte";
-          patch = ./5.4/0005-surface-lte.patch;
+          name = "ms-surface/0004-ioremap_uc";
+          patch = ./5.4/0004-ioremap_uc.patch;
         }
         {
-          name = "ms-surface/0006-wifi";
-          patch = ./5.4/0006-wifi.patch;
+          name = "ms-surface/0005-surface-sam";
+          patch = ./5.4/0005-surface-sam.patch;
         }
         {
-          name = "ms-surface/0007-surface3-spi-dma";
-          patch = ./5.4/0007-surface3-spi-dma.patch;
+          name = "ms-surface/0006-surface-lte";
+          patch = ./5.4/0006-surface-lte.patch;
+        }
+        {
+          name = "ms-surface/0007-wifi";
+          patch = ./5.4/0007-wifi.patch;
         }
       ];
     };
@@ -347,28 +359,32 @@ let
 
       kernelPatches = [
         {
-          name = "ms-surface/0001-ioremap_uc";
-          patch = ./5.4/0001-ioremap_uc.patch;
+          name = "ms-surface/0001-surface3-power";
+          patch = ./5.4/0001-surface3-power.patch;
         }
         {
-          name = "ms-surface/0003-surface-acpi";
-          patch = ./5.4/0003-surface-acpi.patch;
+          name = "ms-surface/0002-surface3-spi";
+          patch = ./5.4/0002-surface3-spi.patch;
         }
         {
-          name = "ms-surface/0004-surface3-power";
-          patch = ./5.4/0004-surface3-power.patch;
+          name = "ms-surface/0003-surface3-oemb";
+          patch = ./5.4/0003-surface3-oemb.patch;
         }
         {
-          name = "ms-surface/0005-surface-lte";
-          patch = ./5.4/0005-surface-lte.patch;
+          name = "ms-surface/0004-ioremap_uc";
+          patch = ./5.4/0004-ioremap_uc.patch;
         }
         {
-          name = "ms-surface/0006-wifi";
-          patch = ./5.4/0006-wifi.patch;
+          name = "ms-surface/0005-surface-sam";
+          patch = ./5.4/0005-surface-sam.patch;
         }
         {
-          name = "ms-surface/0007-surface3-spi-dma";
-          patch = ./5.4/0007-surface3-spi-dma.patch;
+          name = "ms-surface/0006-surface-lte";
+          patch = ./5.4/0006-surface-lte.patch;
+        }
+        {
+          name = "ms-surface/0007-wifi";
+          patch = ./5.4/0007-wifi.patch;
         }
       ];
     };
