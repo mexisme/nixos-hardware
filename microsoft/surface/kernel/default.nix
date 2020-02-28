@@ -360,7 +360,6 @@ let
       kernelPatches = [
         {
           name = "microsoft-surface-config";
-          patch = null;
           extraConfig = ''
             SURFACE_SAM m
             SURFACE_SAM_SSH m
