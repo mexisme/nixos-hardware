@@ -367,7 +367,7 @@ let
             SURFACE_SAM_SSH_DEBUG_DEVICE y
             SURFACE_SAM_SAN m
             SURFACE_SAM_VHF m
-            SURFACE_SAM_DTX m
+            #SURFACE_SAM_DTX m
             SURFACE_SAM_HPS m
             SURFACE_SAM_SID m
             SURFACE_SAM_SID_GPELID m
