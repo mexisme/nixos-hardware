@@ -373,9 +373,7 @@ let
             SURFACE_SAM_SID_PERFMODE m
             SURFACE_SAM_SID_VHF m
             SURFACE_SAM_SID_POWER m
-
             TOUCHSCREEN_IPTS m
-
             INPUT_SOC_BUTTON_ARRAY m
             SURFACE_3_POWER_OPREGION m
             SURFACE_3_BUTTON m
