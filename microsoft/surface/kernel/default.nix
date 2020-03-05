@@ -164,7 +164,7 @@ let
       kernelPackages = (with pkgs;
         recurseIntoAttrs (
           linuxPackagesFor (
-            callPackage ./linux-5.4.7.nix { kernelPatches = []; }
+            callPackage ./5.4/linux-5.4.7.nix { kernelPatches = []; }
           )
         )
       );
@@ -205,7 +205,7 @@ let
       kernelPackages = (with pkgs;
         recurseIntoAttrs (
           linuxPackagesFor (
-            callPackage ./linux-5.4.11.nix {
+            callPackage ./5.4/linux-5.4.11.nix {
               kernelPatches = [
                 kernelPatches.bridge_stp_helper
                 # kernelPatches.request_key_helper
@@ -252,7 +252,7 @@ let
       kernelPackages = (with pkgs;
         recurseIntoAttrs (
           linuxPackagesFor (
-            callPackage ./linux-5.4.13.nix {
+            callPackage ./5.4/linux-5.4.13.nix {
               kernelPatches = [
                 kernelPatches.bridge_stp_helper
                 # kernelPatches.request_key_helper
@@ -299,7 +299,7 @@ let
       kernelPackages = (with pkgs;
         recurseIntoAttrs (
           linuxPackagesFor (
-            callPackage ./linux-5.4.16.nix {
+            callPackage ./5.4/linux-5.4.16.nix {
               kernelPatches = [
                 kernelPatches.bridge_stp_helper
                 # kernelPatches.request_key_helper
@@ -346,7 +346,7 @@ let
       kernelPackages = (with pkgs;
         recurseIntoAttrs (
           linuxPackagesFor (
-            callPackage ./linux-5.4.22.nix {
+            callPackage ./5.4/linux-5.4.22.nix {
               kernelPatches = [
                 kernelPatches.bridge_stp_helper
                 # kernelPatches.request_key_helper
@@ -420,7 +420,7 @@ let
     #   kernelPackages = (with pkgs;
     #     recurseIntoAttrs (
     #       linuxPackagesFor (
-    #         callPackage ./linux-5.5.?.nix {
+    #         callPackage ./5.5/linux-5.5.?.nix {
     #           kernelPatches = [
     #             kernelPatches.bridge_stp_helper
     #             # kernelPatches.request_key_helper
