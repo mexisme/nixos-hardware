@@ -386,6 +386,10 @@ let
           name = "ms-surface/0007-wifi";
           patch = ./5.4/0007-wifi.patch;
         }
+        {
+          name = "ms-surface/0008-ipts";
+          patch = ./5.4/0008-ipts.patch;
+        }
       ];
     };
 
