@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 {
-  boot.extraModprobeConfig = ''
+  boot.extraModprobeConfig = lib.mkDefault ''
     options i915 enable_fbc=1 enable_rc6=1 modeset=1
     options snd_hda_intel power_save=1
     options snd_ac97_codec power_save=1
@@ -11,7 +11,9 @@
 
   boot.kernelParams = [ "mem_sleep_default=deep" ];
 
-  services.tlp.enable = false;
+  # TLP is known to cause problems on Surface unless correctly configured.
+  # See: https://github.com/linux-surface/linux-surface/blob/master/README.md
+  services.tlp.enable = lib.mkDefault false;
 
-  hardware.sensor.iio.enable = true;
+  hardware.sensor.iio.enable = lib.mkDefault true;
 }
