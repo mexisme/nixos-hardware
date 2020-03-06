@@ -487,31 +487,31 @@ let
         }
         {
           name = "ms-surface/0001-surface3-power";
-          patch = ./5.4/0001-surface3-power.patch;
+          patch = ./5.5/0001-surface3-power.patch;
         }
         {
           name = "ms-surface/0002-surface3-spi";
-          patch = ./5.4/0002-surface3-spi.patch;
+          patch = ./5.5/0002-surface3-spi.patch;
         }
         {
           name = "ms-surface/0003-surface3-oemb";
-          patch = ./5.4/0003-surface3-oemb.patch;
+          patch = ./5.5/0003-surface3-oemb.patch;
         }
         {
           name = "ms-surface/0004-surface-sam";
-          patch = ./5.4/0004-surface-sam.patch;
+          patch = ./5.5/0004-surface-sam.patch;
         }
         {
           name = "ms-surface/0005-surface-lte";
-          patch = ./5.4/0005-surface-lte.patch;
+          patch = ./5.5/0005-surface-lte.patch;
         }
         {
           name = "ms-surface/0006-wifi";
-          patch = ./5.4/0006-wifi.patch;
+          patch = ./5.5/0006-wifi.patch;
         }
         {
           name = "ms-surface/0007-ipts";
-          patch = ./5.4/0007-ipts.patch;
+          patch = ./5.5/0007-ipts.patch;
         }
       ];
     };
