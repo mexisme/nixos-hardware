@@ -543,6 +543,6 @@ let
     };
   };
 in {
-  boot.kernelPackages = kernelVersions.linux_5_5_8.kernelPackages;
-  boot.kernelPatches = kernelVersions.linux_5_5_8.kernelPatches;
+  boot.kernelPackages = kernelVersions.linux_5_4_24.kernelPackages;
+  boot.kernelPatches = kernelVersions.linux_5_4_24.kernelPatches;
 }
