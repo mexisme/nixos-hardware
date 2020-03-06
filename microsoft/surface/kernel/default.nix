@@ -416,6 +416,58 @@ let
       ];
     };
 
+
+    linux_5_4_24 = {
+      kernelPackages = (with pkgs;
+        recurseIntoAttrs (
+          linuxPackagesFor (
+            callPackage ./5.4/linux-5.4.24.nix {
+              kernelPatches = [
+                kernelPatches.bridge_stp_helper
+                # kernelPatches.request_key_helper
+                # kernelPatches.export_kernel_fpu_functions
+              ];
+            }
+          )
+        )
+      );
+
+      kernelPatches = [
+        {
+          name = "ms-surface/0001-surface3-power";
+          patch = ./5.4/0001-surface3-power.patch;
+        }
+        {
+          name = "ms-surface/0002-surface3-spi";
+          patch = ./5.4/0002-surface3-spi.patch;
+        }
+        {
+          name = "ms-surface/0003-surface3-oemb";
+          patch = ./5.4/0003-surface3-oemb.patch;
+        }
+        {
+          name = "ms-surface/0004-ioremap_uc";
+          patch = ./5.4/0004-ioremap_uc.patch;
+        }
+        {
+          name = "ms-surface/0005-surface-sam";
+          patch = ./5.4/0005-surface-sam.patch;
+        }
+        {
+          name = "ms-surface/0006-surface-lte";
+          patch = ./5.4/0006-surface-lte.patch;
+        }
+        {
+          name = "ms-surface/0007-wifi";
+          patch = ./5.4/0007-wifi.patch;
+        }
+        {
+          name = "ms-surface/0008-ipts";
+          patch = ./5.4/0008-ipts.patch;
+        }
+      ];
+    };
+
     # linux_5_5_? = {
     #   kernelPackages = (with pkgs;
     #     recurseIntoAttrs (
@@ -488,6 +540,6 @@ let
     # };
   };
 in {
-  boot.kernelPackages = kernelVersions.linux_5_4_22.kernelPackages;
-  boot.kernelPatches = kernelVersions.linux_5_4_22.kernelPatches;
+  boot.kernelPackages = kernelVersions.linux_5_4_24.kernelPackages;
+  boot.kernelPatches = kernelVersions.linux_5_4_24.kernelPatches;
 }
