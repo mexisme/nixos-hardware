@@ -6,7 +6,7 @@ Add and update `nixos-hardware` channel:
 
 ```
 $ sudo nix-channel --add https://github.com/NixOS/nixos-hardware/archive/master.tar.gz nixos-hardware
-$ sudo nix-channel --update nixos-hardware
+$ sudo nix-channel --update
 ```
 
 Then import an appropriate profile path from the table below. For example, to
@@ -34,6 +34,7 @@ See code for all available configurations.
 | [Apple MacBook Pro 10,1][]        | `<nixos-hardware/apple/macbook-pro/10-1>`          |
 | Apple MacBook Pro 12,1            | `<nixos-hardware/apple/macbook-pro/12-1>`          |
 | BeagleBoard PocketBeagle          | `<nixos-hardware/beagleboard/pocketbeagle>`        |
+| Dell Latitude 3480                | `<nixos-hardware/dell/latitude/3480>`              |
 | [Dell XPS E7240][]                | `<nixos-hardware/dell/e7240>`                      |
 | [Dell XPS 13 7390][]              | `<nixos-hardware/dell/xps/13-7390>`                |
 | [Dell XPS 13 9360][]              | `<nixos-hardware/dell/xps/13-9360>`                |
@@ -44,6 +45,7 @@ See code for all available configurations.
 | [Dell XPS 15 9560][]              | `<nixos-hardware/dell/xps/15-9560>`                |
 | [Dell XPS 15 9560, intel only][]  | `<nixos-hardware/dell/xps/15-9560/intel>`          |
 | [Dell XPS 15 9560, nvidia only][] | `<nixos-hardware/dell/xps/15-9560/nvidia>`         |
+| [Google Pixelbook][]              | `<nixos-hardware/google/pixelbook>`                |
 | [Inverse Path USB armory][]       | `<nixos-hardware/inversepath/usbarmory>`           |
 | Lenovo IdeaPad Z510               | `<nixos-hardware/lenovo/ideapad/z510>`             |
 | Lenovo ThinkPad E495              | `<nixos-hardware/lenovo/thinkpad/e495>`            |
@@ -59,6 +61,7 @@ See code for all available configurations.
 | Lenovo ThinkPad T470s             | `<nixos-hardware/lenovo/thinkpad/t470s>`           |
 | Lenovo ThinkPad T480s             | `<nixos-hardware/lenovo/thinkpad/t480s>`           |
 | Lenovo ThinkPad T490              | `<nixos-hardware/lenovo/thinkpad/t490>`            |
+| Lenovo ThinkPad T495              | `<nixos-hardware/lenovo/thinkpad/t495>`            |
 | Lenovo ThinkPad X140e             | `<nixos-hardware/lenovo/thinkpad/x140e>`           |
 | Lenovo ThinkPad X220              | `<nixos-hardware/lenovo/thinkpad/x220>`            |
 | Lenovo ThinkPad X230              | `<nixos-hardware/lenovo/thinkpad/x230>`            |
@@ -67,15 +70,18 @@ See code for all available configurations.
 | Lenovo ThinkPad X270              | `<nixos-hardware/lenovo/thinkpad/x270>`            |
 | Lenovo ThinkPad X280              | `<nixos-hardware/lenovo/thinkpad/x280>`            |
 | [Lenovo ThinkPad X1 (6th Gen)][]  | `<nixos-hardware/lenovo/thinkpad/x1/6th-gen>`      |
+| [Lenovo ThinkPad X1 (7th Gen)][]  | `<nixos-hardware/lenovo/thinkpad/x1/7th-gen>`      |
 | Lenovo ThinkPad X1 Extreme Gen 2  | `<nixos-hardware/lenovo/thinkpad/x1-extreme/gen2>` |
 | [Microsoft Surface Pro 3][]       | `<nixos-hardware/microsoft/surface-pro/3>`         |
 | PC Engines APU                    | `<nixos-hardware/pcengines/apu>`                   |
 | [Raspberry Pi 2][]                | `<nixos-hardware/raspberry-pi/2>`                  |
 | [Samsung Series 9 NP900X3C][]     | `<nixos-hardware/samsung/np900x3c>`                |
 | [Purism Librem 13v3][]            | `<nixos-hardware/purism/librem/13v3>`              |
+| [Purism Librem 15v3][]            | `<nixos-hardware/purism/librem/15v3>`              |
 | Supermicro A1SRi-2758F            | `<nixos-hardware/supermicro/a1sri-2758f>`          |
 | Supermicro X10SLL-F               | `<nixos-hardware/supermicro/x10sll-f>`             |
 | [Toshiba Chromebook 2 `swanky`][] | `<nixos-hardware/toshiba/swanky>`                  |
+| [Tuxedo InfinityBook v4][]        | `<nixos-hardware/tuxedo/infinitybook/v4>`          |
 
 [Acer Aspire 4810T]: acer/aspire/4810t
 [Apple MacBook Pro 10,1]: apple/macbook-pro/10-1
@@ -89,11 +95,21 @@ See code for all available configurations.
 [Dell XPS 15 9560]: dell/xps/15-9560
 [Dell XPS 15 9560, intel only]: dell/xps/15-9560/intel
 [Dell XPS 15 9560, nvidia only]: dell/xps/15-9560/nvidia
+[Google Pixelbook]: google/pixelbook
 [Inverse Path USB armory]: inversepath/usbarmory
 [Lenovo ThinkPad X1 (6th Gen)]: lenovo/thinkpad/x1/6th-gen
+[Lenovo ThinkPad X1 (7th Gen)]: lenovo/thinkpad/x1/7th-gen
 [Lenovo ThinkPad X260]: lenovo/thinkpad/x260
 [Microsoft Surface Pro 3]: microsoft/surface-pro/3
 [Raspberry Pi 2]: raspberry-pi/2
 [Samsung Series 9 NP900X3C]: samsung/np900x3c
 [Purism Librem 13v3]: purism/librem/13v3
+[Purism Librem 13v5]: purism/librem/13v5
 [Toshiba Chromebook 2 `swanky`]: toshiba/swanky
+[Tuxedo InfinityBook v4]: nixos-hardware/tuxedo/infinitybook/v4
+
+## How to contribute a new device profile
+
+1. Add your device profile expression in the appropriate directory
+2. Link it in the table in README.md
+3. Run ./tests/run.py to test it. The test script script will parse all the profiles from the README.md
