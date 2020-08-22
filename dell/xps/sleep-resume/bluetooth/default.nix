@@ -21,14 +21,16 @@ with lib;
 
   config = mkIf cfg.enable {
     systemd.services.sleep-resume_bluetooth = {
+      conflicts = [ "bluetooth.service" ];
       wantedBy = [ "suspend.target" ];
       after = [ "suspend.target" ];
       description = "Reload Bluetooth after resuming from sleep.";
       serviceConfig = {
         Type = "oneshot";
         ExecStart = [
-          "${pkgs.systemd}/bin/systemctl stop bluetooth"
           "${pkgs.kmod}/bin/modprobe -r btusb"
+        ];
+        ExecStartPost = [
           "${pkgs.coreutils}/bin/sleep 5"
           "${pkgs.kmod}/bin/modprobe btusb"
         ];
