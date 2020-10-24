@@ -48,13 +48,13 @@ There is also experimental flake support. In your `/etc/nixos/flake.nix` add the
 ```
 
 
-### Using fetchgit
+### Using fetchGit
 
 You can fetch the git repository directly:
 
 ```nix
 imports = [ 
-  "${builtins.fetchgit { url = "https://github.com/NixOS/nixos-hardware.git"; }}/lenovo/thinkpad/x220"
+  "${builtins.fetchGit { url = "https://github.com/NixOS/nixos-hardware.git"; }}/lenovo/thinkpad/x220"
 ];
 ```
 
@@ -77,6 +77,7 @@ See code for all available configurations.
 | Asus TUF FX504GD                  | `<nixos-hardware/asus/fx504gd>`                    |
 | BeagleBoard PocketBeagle          | `<nixos-hardware/beagleboard/pocketbeagle>`        |
 | Dell Latitude 3480                | `<nixos-hardware/dell/latitude/3480>`              |
+| Dell Precision 5530               | `<nixos-hardware/dell/precision/5530>`             |
 | [Dell XPS E7240][]                | `<nixos-hardware/dell/e7240>`                      |
 | [Dell XPS 13 7390][]              | `<nixos-hardware/dell/xps/13-7390>`                |
 | [Dell XPS 13 9343][]              | `<nixos-hardware/dell/xps/13-9343>`                |
@@ -93,8 +94,11 @@ See code for all available configurations.
 | [Google Pixelbook][]              | `<nixos-hardware/google/pixelbook>`                |
 | [Inverse Path USB armory][]       | `<nixos-hardware/inversepath/usbarmory>`           |
 | Lenovo IdeaPad Z510               | `<nixos-hardware/lenovo/ideapad/z510>`             |
+| Lenovo ThinkPad E470              | `<nixos-hardware/lenovo/thinkpad/e470>`
 | Lenovo ThinkPad E495              | `<nixos-hardware/lenovo/thinkpad/e495>`            |
 | Lenovo ThinkPad L13               | `<nixos-hardware/lenovo/thinkpad/l13>`             |
+| Lenovo ThinkPad L14 (Intel)       | `<nixos-hardware/lenovo/thinkpad/l14/intel>        |
+| Lenovo ThinkPad L14 (AMD)         | `<nixos-hardware/lenovo/thinkpad/l14/amd>          |
 | Lenovo ThinkPad P53               | `<nixos-hardware/lenovo/thinkpad/p53>`             |
 | Lenovo ThinkPad T410              | `<nixos-hardware/lenovo/thinkpad/t410>`            |
 | Lenovo ThinkPad T420              | `<nixos-hardware/lenovo/thinkpad/t420>`            |
@@ -158,5 +162,5 @@ See code for all available configurations.
 ## How to contribute a new device profile
 
 1. Add your device profile expression in the appropriate directory
-2. Link it in the table in README.md
+2. Link it in the table in README.md and in flake.nix
 3. Run ./tests/run.py to test it. The test script script will parse all the profiles from the README.md

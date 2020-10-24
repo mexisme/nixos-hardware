@@ -12,6 +12,7 @@
       apple-macbook-air-12-1 = import ./apple/macbook-pro/12-1;
       beagleboard-pocketbeagle = import ./beagleboard/pocketbeagle;
       dell-latitude-3480 = import ./dell/latitude/3480;
+      dell-precision-5530 = import ./dell/precision/5530;
       dell-e7240 = import ./dell/e7240;
       dell-xps-13-7390 = import ./dell/xps/13-7390;
       dell-xps-13-9360 = import ./dell/xps/13-9360;
@@ -27,8 +28,11 @@
       google-pixelbook = import ./google/pixelbook;
       inversepath-usbarmory = import ./inversepath/usbarmory;
       lenovo-ideapad-z510 = import ./lenovo/ideapad/z510;
+      lenovo-thinkpad-e470 = import ./lenovo/thinkpad/e470;
       lenovo-thinkpad-e495 = import ./lenovo/thinkpad/e495;
       lenovo-thinkpad-l13 = import ./lenovo/thinkpad/l13;
+      lenovo-thinkpad-l14-intel = import ./lenovo/thinkpad/l14/intel;
+      lenovo-thinkpad-l14-amd = import ./lenovo/thinkpad/l14/amd;
       lenovo-thinkpad-p53 = import ./lenovo/thinkpad/p53;
       lenovo-thinkpad-t410 = import ./lenovo/thinkpad/t410;
       lenovo-thinkpad-t420 = import ./lenovo/thinkpad/t420;
@@ -61,6 +65,18 @@
       supermicro-x10sll-f = import ./supermicro/x10sll-f;
       thoshiba-swanky = import ./toshiba/swanky;
       tuxedo-infinitybook-v4 = import ./tuxedo/infinitybook/v4;
+      common-cpu-amd = import ./common/cpu/amd;
+      common-cpu-intel = import ./common/cpu/intel;
+      common-cpu-intel-kaby-lake = import ./common/cpu/intel/kaby-lake;
+      common-cpu-intel-sandy-bridge = import ./common/cpu/intel/sandy-bridge;
+      common-gpu-nvidia = import ./common/gpu/nvidia.nix;
+      common-pc-hdd = import ./common/pc/hdd;
+      common-pc-laptop-hdd = import ./common/pc/laptop/hdd;
+      common-pc-laptop-ssd = import ./common/pc/ssd;
+      common-pc-laptop-acpi_call = import ./common/pc/laptop/acpi_call.nix;
+      common-pc-laptop = import ./common/pc/laptop;
+      common-pc-ssd = import ./common/pc/ssd;
+      common-pc = import ./common/pc;
     };
   };
 }
