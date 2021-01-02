@@ -11,10 +11,12 @@
       apple-macbook-air-10-1 = import ./apple/macbook-pro/10-1;
       apple-macbook-air-12-1 = import ./apple/macbook-pro/12-1;
       beagleboard-pocketbeagle = import ./beagleboard/pocketbeagle;
+      dell-g3-3779 = import ./dell/g3/3779;
       dell-latitude-3480 = import ./dell/latitude/3480;
       dell-precision-5530 = import ./dell/precision/5530;
       dell-e7240 = import ./dell/e7240;
       dell-xps-13-7390 = import ./dell/xps/13-7390;
+      dell-xps-13-9343 = import ./dell/xps/13-9343;
       dell-xps-13-9360 = import ./dell/xps/13-9360;
       dell-xps-13-9370 = import ./dell/xps/13-9370;
       dell-xps-13-9380 = import ./dell/xps/13-9380;
@@ -34,6 +36,8 @@
       lenovo-thinkpad-l14-intel = import ./lenovo/thinkpad/l14/intel;
       lenovo-thinkpad-l14-amd = import ./lenovo/thinkpad/l14/amd;
       lenovo-thinkpad-p53 = import ./lenovo/thinkpad/p53;
+      lenovo-thinkpad-t14 = import ./lenovo/thinkpad/t14;
+      lenovo-thinkpad-t14-amd-gen1 = import ./lenovo/thinkpad/t14/amd/gen1;
       lenovo-thinkpad-t14s = import ./lenovo/thinkpad/t14s;
       lenovo-thinkpad-t14s-amd-gen1 = import ./lenovo/thinkpad/t14s/amd/gen1;
       lenovo-thinkpad-t410 = import ./lenovo/thinkpad/t410;
