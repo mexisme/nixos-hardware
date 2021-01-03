@@ -466,6 +466,6 @@ let
     )));
   };
 in {
-  surface_kernelPatches = surface_kernelPatches;
-  surface_kernelPackages = surface_kernelPackages;
+  # TODO: Create a function for selecting preferred kernel:
+  boot.kernelPackages = surface_kernelPackages.linux_5_10_2;
 }

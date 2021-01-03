@@ -8,6 +8,7 @@
 * DONE Remove firmware files
   - Looks like the ath10k files aren't needed, any more
 * DONE Patch kernel using downloaded files
+* TODO Create a function for selecting preferred kernel
 * TODO Patch and rebuild libwacom
   - github.com/linux-surface/libwacom-surface
 * TODO Incorporate @hpfr's function(s) from this commit:
