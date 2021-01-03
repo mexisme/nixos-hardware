@@ -5,6 +5,45 @@ let
   patches = repos.linux-surface + "/patches";
   surface_kernelPatches = {
     linux_5_4 = [
+       {
+        name = "microsoft-surface-config";
+        patch = null;
+        extraConfig = ''
+          #
+          # Surface Aggregator Module
+          #
+          SURFACE_AGGREGATOR m
+          SURFACE_AGGREGATOR_ERROR_INJECTION n
+          SURFACE_AGGREGATOR_BUS y
+          SURFACE_AGGREGATOR_CDEV m
+          SURFACE_AGGREGATOR_REGISTRY m
+          SURFACE_ACPI_NOTIFY m
+          SURFACE_BATTERY m
+          SURFACE_DTX m
+          SURFACE_HID m
+          SURFACE_PERFMODE m
+
+          #
+          # Surface Hotplug
+          #
+          SURFACE_HOTPLUG m
+
+          #
+          # IPTS touchscreen
+          #
+          TOUCHSCREEN_IPTS m
+
+          #
+          # Other Drivers
+          #
+          INPUT_SOC_BUTTON_ARRAY m
+          SURFACE_3_BUTTON m
+          SURFACE_3_POWER_OPREGION m
+          SURFACE_PRO3_BUTTON m
+          SURFACE_GPE m
+          SURFACE_BOOK1_DGPU_SWITCH m
+        '';
+      }
       {
         name = "ms-surface/0001-surface3-power";
         patch = patches + "/5.4/0001-surface3-power.patch";
@@ -48,7 +87,7 @@ let
     ];
 
     linux_5_5 = [
-      {
+       {
         name = "microsoft-surface-config";
         patch = null;
         extraConfig = ''
