@@ -9,33 +9,41 @@ let
         name = "ms-surface/0001-surface3-power";
         patch = patches + "/5.4/0001-surface3-power.patch";
       }
+      # {
+      #   name = "ms-surface/0002-surface3-spi";
+      #   patch = patches + "/5.4/0002-surface3-spi.patch";
+      # }
       {
-        name = "ms-surface/0002-surface3-spi";
-        patch = patches + "/5.4/0002-surface3-spi.patch";
+        name = "ms-surface/0002-surface3-oemb";
+        patch = patches + "/5.4/0002-surface3-oemb.patch";
       }
       {
-        name = "ms-surface/0003-surface3-oemb";
-        patch = patches + "/5.4/0003-surface3-oemb.patch";
+        name = "ms-surface/0003-wifi";
+        patch = patches + "/5.4/0003-wifi.patch";
       }
       {
-        name = "ms-surface/0004-ioremap_uc";
-        patch = patches + "/5.4/0004-ioremap_uc.patch";
+        name = "ms-surface/0004-ipts";
+        patch = patches + "/5.4/0004-ipts.patch";
       }
       {
-        name = "ms-surface/0005-surface-sam";
-        patch = patches + "/5.4/0005-surface-sam.patch";
+        name = "ms-surface/0005-surface-gpe";
+        patch = patches + "/5.4/0005-surface-gpe.patch";
       }
       {
-        name = "ms-surface/0006-surface-lte";
-        patch = patches + "/5.4/0006-surface-lte.patch";
+        name = "ms-surface/0006-surface-sam-over-hid";
+        patch = patches + "/5.4/0006-surface-sam-over-hid.patch";
       }
       {
-        name = "ms-surface/0007-wifi";
-        patch = patches + "/5.4/0007-wifi.patch";
+        name = "ms-surface/0007-surface-sam";
+        patch = patches + "/5.4/0007-surface-sam.patch";
       }
       {
-        name = "ms-surface/0008-ipts";
-        patch = patches + "/5.4/0008-ipts.patch";
+        name = "ms-surface/0008-surface-hotplug";
+        patch = patches + "/5.4/0008-surface-hotplug.patch";
+      }
+      {
+        name = "ms-surface/0009-surface-typecover";
+        patch = patches + "/5.4/0009-surface-typecover.patch";
       }
     ];
 
