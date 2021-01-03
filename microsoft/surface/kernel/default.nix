@@ -100,8 +100,12 @@ let
           SURFACE_BATTERY m
           SURFACE_DTX m
           SURFACE_HID m
-          SURFACE_HOTPLUG m
           SURFACE_PERFMODE m
+
+          #
+          # Surface Hotplug
+          #
+          SURFACE_HOTPLUG m
 
           #
           # IPTS touchscreen
