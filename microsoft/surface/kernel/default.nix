@@ -164,8 +164,6 @@ let
           #
           # Surface Aggregator Module
           #
-          # required for SURFACE_HOTPLUG:
-          GPIO_SYSFS y
           SURFACE_AGGREGATOR m
           SURFACE_AGGREGATOR_ERROR_INJECTION n
           SURFACE_AGGREGATOR_BUS y
@@ -175,8 +173,12 @@ let
           SURFACE_BATTERY m
           SURFACE_DTX m
           SURFACE_HID m
-          SURFACE_HOTPLUG m
           SURFACE_PERFMODE m
+
+          #
+          # Surface Hotplug
+          #
+          SURFACE_HOTPLUG m
 
           #
           # IPTS touchscreen
@@ -187,6 +189,20 @@ let
           MISC_IPTS m
 
           #
+          # Cameras: IPU3
+          #
+          VIDEO_IPU3_IMGU m
+          VIDEO_IPU3_CIO2 m
+          CIO2_BRIDGE y
+          INT3472 m
+
+          #
+          # Cameras: Sensor drivers
+          #
+          VIDEO_OV5693 m
+          VIDEO_OV8865 m
+
+          #
           # Other Drivers
           #
           INPUT_SOC_BUTTON_ARRAY m
@@ -194,13 +210,14 @@ let
           SURFACE_3_POWER_OPREGION m
           SURFACE_PRO3_BUTTON m
           SURFACE_GPE m
-          SURFACE__DGPU_SWITCH m
+          SURFACE_BOOK1_DGPU_SWITCH m
         '';
       }
       {
         name = "ms-surface/0001-surface3-oemb";
         patch = patches + "/5.10/0001-surface3-oemb.patch";
       }
+
       # {
       #   name = "ms-surface/0002-wifi";
       #   patch = patches + "/5.10/0002-wifi.patch";
