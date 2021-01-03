@@ -1,6 +1,6 @@
 {stdenv, pkgs, ...}:
 let
-  repos = (pkgs.callPackage ./repos.nix {});
+  repos = (pkgs.callPackage ../repos.nix {});
 in
 stdenv.mkDerivation {
   name = "microsoft-surface-ipts-firmware";
