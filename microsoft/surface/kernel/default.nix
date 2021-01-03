@@ -249,7 +249,7 @@ let
   };
   surface_kernelPackages = {
     linux_5_4_24 = (with pkgs; recurseIntoAttrs (linuxPackagesFor (
-      callPackage ./5.4/linux-5.4.24.nix {
+      callPackage ./linux-5.4.24.nix {
         kernelPatches = [
           kernelPatches.bridge_stp_helper
           # kernelPatches.request_key_helper
@@ -260,7 +260,7 @@ let
     )));
 
     linux_5_5_8 = (with pkgs; recurseIntoAttrs (linuxPackagesFor (
-      callPackage ./5.5/linux-5.5.8.nix {
+      callPackage ./linux-5.5.8.nix {
         kernelPatches = [
           kernelPatches.bridge_stp_helper
           # kernelPatches.request_key_helper
@@ -271,7 +271,7 @@ let
     )));
 
     linux_5_9_2 = (with pkgs; recurseIntoAttrs (linuxPackagesFor (
-      callPackage ./5.9/linux-5.9.2.nix {
+      callPackage ./linux-5.9.2.nix {
         kernelPatches = surface_kernelPatches.linux_5_9;
       }
     )));
