@@ -92,10 +92,6 @@ let
         patch = patches + "/5.5/0004-surface-sam.patch";
       }
       {
-        name = "ms-surface/0005-surface-lte";
-        patch = patches + "/5.5/0005-surface-lte.patch";
-      }
-      {
         name = "ms-surface/0006-wifi";
         patch = patches + "/5.5/0006-wifi.patch";
       }
