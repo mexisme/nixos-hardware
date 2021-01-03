@@ -3,7 +3,6 @@ let
   repos = (pkgs.callPackage ../repos.nix {});
   # TODO: Can I append the path ./patches instead of a string?
   patches = repos.linux-surface + "/patches";
-in {
   surface_kernelPatches = {
     linux_5_4 = [
       {
@@ -256,7 +255,7 @@ in {
           # kernelPatches.request_key_helper
           # kernelPatches.export_kernel_fpu_functions
         ]
-        ++ new_kernelPatches.linux_5_4;
+        ++ surface_kernelPatches.linux_5_4;
       }
     )));
 
@@ -267,20 +266,23 @@ in {
           # kernelPatches.request_key_helper
           # kernelPatches.export_kernel_fpu_functions
         ]
-        ++ new_kernelPatches.linux_5_5;
+        ++ surface_kernelPatches.linux_5_5;
       }
     )));
 
     linux_5_9_2 = (with pkgs; recurseIntoAttrs (linuxPackagesFor (
       callPackage ./5.9/linux-5.9.2.nix {
-        kernelPatches = new_kernelPatches.linux_5_9;
+        kernelPatches = surface_kernelPatches.linux_5_9;
       }
     )));
 
     linux_5_10_4 = (with pkgs; recurseIntoAttrs (linuxPackagesFor (
       callPackage ./linux-5.10.4.nix {
-        kernelPatches = new_kernelPatches.linux_5_10;
+        kernelPatches = surface_kernelPatches.linux_5_10;
       }
     )));
   };
+in {
+  surface_kernelPatches = surface_kernelPatches;
+  surface_kernelPackages = surface_kernelPackages;
 }
