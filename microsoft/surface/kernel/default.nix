@@ -166,10 +166,14 @@ let
         name = "ms-surface/0006-surface-sam";
         patch = patches + "/5.9/0006-surface-sam.patch";
       }
-      # {
-      #   name = "ms-surface/0007-i2c-core-Restore-acpi_walk_dep_device_list-getting-c";
-      #   patch = patches + "/5.9/0007-i2c-core-Restore-acpi_walk_dep_device_list-getting-c.patch";
-      # }
+      {
+        name = "ms-surface/0007-surface-hotplug";
+        patch = patches + "/5.4/0007-surface-hotplug.patch";
+      }
+      {
+        name = "ms-surface/0008-surface-typecover";
+        patch = patches + "/5.4/0008-surface-typecover.patch";
+      }
     ];
 
     linux_5_10 = [
