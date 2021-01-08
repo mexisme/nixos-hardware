@@ -3,7 +3,7 @@
   imports = [
     ./kernel
     ./firmware
-    # ./hardware_configuration.nix
+    ./hardware_configuration.nix
   ];
 
   # boot.kernelPackages = surface_kernelPackages.linux_5_10_2;
