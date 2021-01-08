@@ -2,11 +2,13 @@
   - Would it make sense to use git subrepo?
 ** DONE Download github.com/linux-surface/linux-surface kernel patches
 ** DONE Download github.com/linux-surface/surface-ipts-firmware
+** DONE Download github.com/kvalo/ath10k-firmware
   - Should we build this?
 ** TODO Download github.com/linux-surface/surface-control
 ** TODO Download github.com/linux-surface/surface-dtx-daemon
 * DONE Remove firmware files
   - Looks like the ath10k files aren't needed, any more
+* DONE Install ath10k firmware
 * DONE Patch kernel using downloaded files
 * TODO Create a function for selecting preferred kernel
 * TODO Patch and rebuild libwacom
