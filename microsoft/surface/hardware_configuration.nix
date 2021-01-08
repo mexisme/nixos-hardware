@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs }:
 {
   boot.extraModprobeConfig = lib.mkDefault ''
     options i915 enable_fbc=1 enable_rc6=1 modeset=1
