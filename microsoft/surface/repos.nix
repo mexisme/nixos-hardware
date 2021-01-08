@@ -1,4 +1,4 @@
-{ lib, pkgs, fetchgit, ... }:
+{ lib, pkgs, fetchgit }:
 {
   linux-surface = fetchgit {
     url="https://github.com/linux-surface/linux-surface.git";

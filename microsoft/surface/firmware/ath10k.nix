@@ -1,4 +1,4 @@
-{stdenv, pkgs}:
+{ stdenv, pkgs }:
 let
   repos = (pkgs.callPackage ../repos.nix {});
 in
