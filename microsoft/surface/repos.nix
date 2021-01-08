@@ -6,6 +6,12 @@
     sha256="0h8624d7ix1p6ysw9bllmnnwnv164z8xkx56zj3vdczn91vmqcf9";
   };
 
+  surface-ath10k-firmware = fetchgit {
+    url="https://github.com/kvalo/ath10k-firmware";
+    rev="84b47062aab31d67156e0a3ef593a6999a12864b";
+    sha256="0l8wfj8z4jbb31nzqkaxisby0n6061ix01c5di9bq66iby59j8py";
+  };
+
   surface-ipts-firmware = fetchgit {
     url="https://github.com/linux-surface/surface-ipts-firmware.git";
     rev="bd5093318d2550d5d668241d0d34df4be3fc03ab";
