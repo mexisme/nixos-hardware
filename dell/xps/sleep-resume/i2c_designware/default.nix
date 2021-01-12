@@ -1,0 +1,44 @@
+{config, pkgs, lib, ...}:
+
+let
+  cfg = config.services.sleep-resume.i2c_designware;
+in
+
+with lib;
+
+{
+  options = {
+    services.sleep-resume.i2c_designware = {
+      enable = mkOption {
+        default = false;
+        type = with types; bool;
+        description = ''
+           Reload the i2c_designware driver after resuming from sleep.
+         '';
+      };
+    };
+  };
+
+  config = mkIf cfg.enable {
+    systemd.services.sleep-resume_i2c_designware = {
+      wantedBy = [ "suspend.target" ]; 
+      after = [ "suspend.target" ];
+      description = "Reload the i2c_designware driver after resuming from sleep.";
+      serviceConfig = {
+        Type = "oneshot";
+        ExecStart = [
+          "${pkgs.kmod}/bin/modprobe -r i2c_designware_platform"
+          "${pkgs.kmod}/bin/modprobe -r i2c_designware_core"
+          "${pkgs.kmod}/bin/modprobe -r i2c_hid"
+          "${pkgs.coreutils}/bin/sleep 5"
+          "${pkgs.kmod}/bin/modprobe i2c_designware_platform"
+        ];
+      };
+    };
+
+    environment.systemPackages = [ pkgs.kmod pkgs.coreutils ];
+  };
+}
+
+
+
