@@ -6,12 +6,6 @@
     sha256="09andw78kmz9yd37j0r00y1za2j9n0x6g47b1gyijsglj9yzr7lm";
   };
 
-  linux-kernel-firmware = fetchgit {
-    url="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git";
-    rev="060ad8b3d505e2ff8878d11a81da3532b983cd45";
-    sha256="0n93xc3vzx7gy96lpkypw7ay201x7whirxm00c0zhq6zmq2zs12v";
-  };
-
   ath10k-firmware = fetchgit {
     url="https://github.com/kvalo/ath10k-firmware";
     rev="84b47062aab31d67156e0a3ef593a6999a12864b";
