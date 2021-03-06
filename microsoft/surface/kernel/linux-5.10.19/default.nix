@@ -1,10 +1,9 @@
 { config, lib, pkgs, ... }:
 let
   repos = (pkgs.callPackage ../../repos.nix {});
-  # TODO: Can I append the path ./patches instead of a string?
   patches = repos.linux-surface + "/patches";
   surface_kernelPatches = [
-    { name = "microsoft-surface-patches-linux-5.10.10";
+    { name = "microsoft-surface-patches-linux-5.10.19";
       patch = null;
       extraConfig = ''
           #
@@ -15,11 +14,16 @@ let
           SURFACE_AGGREGATOR_BUS y
           SURFACE_AGGREGATOR_CDEV m
           SURFACE_AGGREGATOR_REGISTRY m
+
           SURFACE_ACPI_NOTIFY m
-          SURFACE_BATTERY m
           SURFACE_DTX m
-          SURFACE_HID m
           SURFACE_PERFMODE m
+
+          SURFACE_HID m
+          SURFACE_KBD m
+
+          BATTERY_SURFACE m
+          CHARGER_SURFACE m
 
           #
           # These built-in modules are required for the Surface Aggregator Module
@@ -44,16 +48,18 @@ let
           #
           # Cameras: IPU3
           #
-          VIDEO_IPU3_IMGU m
+          ## Not yet supported in the patches
+          # VIDEO_IPU3_IMGU m
           VIDEO_IPU3_CIO2 m
           CIO2_BRIDGE y
-          INT3472 m
+          INTEL_SKL_INT3472 m
 
           #
           # Cameras: Sensor drivers
           #
           VIDEO_OV5693 m
-          VIDEO_OV8865 m
+          ## Not yet supported in the patches
+          # VIDEO_OV8865 m
 
           #
           # ALS Sensor for Surface Book 3, Surface Laptop 3, Surface Pro 7
@@ -113,7 +119,7 @@ let
     }
   ];
 in (with pkgs; recurseIntoAttrs (linuxPackagesFor (
-     callPackage ./linux-5.10.10.nix {
+     callPackage ./linux-5.10.19.nix {
        kernelPatches = surface_kernelPatches;
        ## Have to use "ignoreConfigErrors" to get past the following unused options in 5.10.10:
        # DEBUG_STACKOVERFLOW n
