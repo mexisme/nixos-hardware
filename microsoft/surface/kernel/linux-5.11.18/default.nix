@@ -119,7 +119,7 @@ let
     }
   ];
 in (with pkgs; recurseIntoAttrs (linuxPackagesFor (
-     callPackage ./linux-5.10.19.nix {
+     callPackage ./linux-5.11.18.nix {
        kernelPatches = surface_kernelPatches;
      }
    )))
