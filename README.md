@@ -113,6 +113,7 @@ See code for all available configurations.
 | Lenovo ThinkPad T440s             | `<nixos-hardware/lenovo/thinkpad/t440s>`           |
 | Lenovo ThinkPad T440p             | `<nixos-hardware/lenovo/thinkpad/t440p>`           |
 | Lenovo ThinkPad T450s             | `<nixos-hardware/lenovo/thinkpad/t450s>`           |
+| Lenovo ThinkPad T460              | `<nixos-hardware/lenovo/thinkpad/t460>`           |
 | Lenovo ThinkPad T460s             | `<nixos-hardware/lenovo/thinkpad/t460s>`           |
 | Lenovo ThinkPad T470s             | `<nixos-hardware/lenovo/thinkpad/t470s>`           |
 | Lenovo ThinkPad T480s             | `<nixos-hardware/lenovo/thinkpad/t480s>`           |
@@ -120,6 +121,7 @@ See code for all available configurations.
 | Lenovo ThinkPad T495              | `<nixos-hardware/lenovo/thinkpad/t495>`            |
 | Lenovo ThinkPad X113 Yoga         | `<nixos-hardware/lenovo/thinkpad/x13-yoga>`        |
 | Lenovo ThinkPad X140e             | `<nixos-hardware/lenovo/thinkpad/x140e>`           |
+| Lenovo ThinkPad X200s             | `<nixos-hardware/lenovo/thinkpad/x200s>`           |
 | Lenovo ThinkPad X220              | `<nixos-hardware/lenovo/thinkpad/x220>`            |
 | Lenovo ThinkPad X230              | `<nixos-hardware/lenovo/thinkpad/x230>`            |
 | Lenovo ThinkPad X250              | `<nixos-hardware/lenovo/thinkpad/x250>`            |
@@ -131,6 +133,7 @@ See code for all available configurations.
 | Lenovo ThinkPad X1 Extreme Gen 2  | `<nixos-hardware/lenovo/thinkpad/x1-extreme/gen2>` |
 | [Microsoft Surface Range][]       | `<nixos-hardware/microsoft/surface>`               |
 | [Microsoft Surface Pro 3][]       | `<nixos-hardware/microsoft/surface-pro/3>`         |
+| [MSI GS60 2QE][]                  | `<nixos-hardware/msi/gs60>`                        |
 | PC Engines APU                    | `<nixos-hardware/pcengines/apu>`                   |
 | [Raspberry Pi 2][]                | `<nixos-hardware/raspberry-pi/2>`                  |
 | [Samsung Series 9 NP900X3C][]     | `<nixos-hardware/samsung/np900x3c>`                |
@@ -138,6 +141,8 @@ See code for all available configurations.
 | [Purism Librem 15v3][]            | `<nixos-hardware/purism/librem/15v3>`              |
 | Supermicro A1SRi-2758F            | `<nixos-hardware/supermicro/a1sri-2758f>`          |
 | Supermicro X10SLL-F               | `<nixos-hardware/supermicro/x10sll-f>`             |
+| [System76 (generic)][]            | `<nixos-hardware/system76>`                        |
+| [System76 Darter Pro 6][]         | `<nixos-hardware/system76/darp6>`                  |
 | [Toshiba Chromebook 2 `swanky`][] | `<nixos-hardware/toshiba/swanky>`                  |
 | [Tuxedo InfinityBook v4][]        | `<nixos-hardware/tuxedo/infinitybook/v4>`          |
 
@@ -164,8 +169,11 @@ See code for all available configurations.
 [Lenovo ThinkPad X13 Yoga]: lenovo/thinkpad/x13-yoga
 [Lenovo ThinkPad X260]: lenovo/thinkpad/x260
 [Microsoft Surface Pro 3]: microsoft/surface-pro/3
+[MSI GS60 2QE]: msi/gs60
 [Raspberry Pi 2]: raspberry-pi/2
 [Samsung Series 9 NP900X3C]: samsung/np900x3c
+[System76 (generic)]: system76
+[System76 Darter Pro 6]: system76/darp6
 [Purism Librem 13v3]: purism/librem/13v3
 [Purism Librem 15v5]: purism/librem/15v5
 [Toshiba Chromebook 2 `swanky`]: toshiba/swanky
