@@ -95,6 +95,7 @@ See code for all available configurations.
 | [Dell XPS 15 9500][]              | `<nixos-hardware/dell/xps/15-9500>`                |
 | [Dell XPS 15 9500, nvidia][]      | `<nixos-hardware/dell/xps/15-9500/nvidia>`         |
 | [Google Pixelbook][]              | `<nixos-hardware/google/pixelbook>`                |
+| [GPD MicroPC][]                   | `<nixos-hardware/gpd/micropc>`                     |
 | [Inverse Path USB armory][]       | `<nixos-hardware/inversepath/usbarmory>`           |
 | Lenovo IdeaPad Z510               | `<nixos-hardware/lenovo/ideapad/z510>`             |
 | Lenovo ThinkPad E470              | `<nixos-hardware/lenovo/thinkpad/e470>`            |
@@ -131,11 +132,13 @@ See code for all available configurations.
 | [Lenovo ThinkPad X1 (6th Gen)][]  | `<nixos-hardware/lenovo/thinkpad/x1/6th-gen>`      |
 | [Lenovo ThinkPad X1 (7th Gen)][]  | `<nixos-hardware/lenovo/thinkpad/x1/7th-gen>`      |
 | Lenovo ThinkPad X1 Extreme Gen 2  | `<nixos-hardware/lenovo/thinkpad/x1-extreme/gen2>` |
+| [Lenovo ThinkPad X13][]           | `<nixos-hardware/lenovo/thinkpad/x13`              |
 | [Microsoft Surface Range][]       | `<nixos-hardware/microsoft/surface>`               |
 | [Microsoft Surface Pro 3][]       | `<nixos-hardware/microsoft/surface-pro/3>`         |
 | [MSI GS60 2QE][]                  | `<nixos-hardware/msi/gs60>`                        |
 | PC Engines APU                    | `<nixos-hardware/pcengines/apu>`                   |
 | [Raspberry Pi 2][]                | `<nixos-hardware/raspberry-pi/2>`                  |
+| [Raspberry Pi 4][]                | `<nixos-hardware/raspberry-pi/4>`                  |
 | [Samsung Series 9 NP900X3C][]     | `<nixos-hardware/samsung/np900x3c>`                |
 | [Purism Librem 13v3][]            | `<nixos-hardware/purism/librem/13v3>`              |
 | [Purism Librem 15v3][]            | `<nixos-hardware/purism/librem/15v3>`              |
@@ -163,9 +166,11 @@ See code for all available configurations.
 [Dell XPS 15 9560, intel only]: dell/xps/15-9560/intel
 [Dell XPS 15 9560, nvidia only]: dell/xps/15-9560/nvidia
 [Google Pixelbook]: google/pixelbook
+[GPD MicroPC]: gpd/micropc
 [Inverse Path USB armory]: inversepath/usbarmory
 [Lenovo ThinkPad X1 (6th Gen)]: lenovo/thinkpad/x1/6th-gen
 [Lenovo ThinkPad X1 (7th Gen)]: lenovo/thinkpad/x1/7th-gen
+[Lenovo ThinkPad X13]: lenovo/thinkpad/x13
 [Lenovo ThinkPad X13 Yoga]: lenovo/thinkpad/x13-yoga
 [Lenovo ThinkPad X260]: lenovo/thinkpad/x260
 [Microsoft Surface Pro 3]: microsoft/surface-pro/3

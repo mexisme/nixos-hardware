@@ -30,6 +30,7 @@
       dell-xps-15-9500 = import ./dell/xps/15-9500;
       dell-xps-15-9500-nvidia = import ./dell/xps/15-9500/nvidia;
       google-pixelbook = import ./google/pixelbook;
+      gpd-micropc = import ./gpd/micropc;
       inversepath-usbarmory = import ./inversepath/usbarmory;
       lenovo-ideapad-z510 = import ./lenovo/ideapad/z510;
       lenovo-thinkpad-e470 = import ./lenovo/thinkpad/e470;
@@ -67,11 +68,13 @@
       lenovo-thinkpad-x1-7th-gen = import ./lenovo/thinkpad/x1/7th-gen;
       lenovo-thinkpad-x1-extreme = import ./lenovo/thinkpad/x1-extreme;
       lenovo-thinkpad-x1-extreme-gen2 = import ./lenovo/thinkpad/x1-extreme/gen2;
+      lenovo-thinkpad-x13 = import ./lenovo/thinkpad/x13;
       lenovo-thinkpad-x13-yoga = import ./lenovo/thinkpad/x13-yoga;
       microsoft-surface = import ./microsoft/surface;
       microsoft-surface-pro-3 = import ./microsoft/surface-pro/3;
       pcengines-apu = import ./pcengines/apu;
       raspberry-pi-2 = import ./raspberry-pi/2;
+      raspberry-pi-4 = import ./raspberry-pi/4;
       samsung-np900x3c = import ./samsung/np900x3c;
       system76 = import ./system76;
       system76-darp6 = import ./system76/darp6;
