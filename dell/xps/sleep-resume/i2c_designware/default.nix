@@ -30,7 +30,7 @@ with lib;
           "${pkgs.kmod}/bin/modprobe -r i2c_designware_platform"
           "${pkgs.kmod}/bin/modprobe -r i2c_designware_core"
           "${pkgs.kmod}/bin/modprobe -r i2c_hid"
-          "${pkgs.coreutils}/bin/sleep 5"
+          "${pkgs.coreutils}/bin/sleep 0.1"
           "${pkgs.kmod}/bin/modprobe i2c_designware_platform"
           # NOTE: In kernel 5.12, you may also need to add the i2c_hid_acpi driver, as it was split-off in this release:
           # "${pkgs.kmod}/bin/modprobe i2c_hid_acpi"
