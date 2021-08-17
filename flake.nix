@@ -5,6 +5,7 @@
     nixosModules = {
       dell-aspire-4810t = import ./acer/aspire/4810t;
       asus-fx504gd = import ./asus/fx504gd;
+      asus-zephyrus-ga401 = import ./asus/zephyrus/ga401;
       apple-macbook-air-3 = import ./apple/macbook-air/3;
       apple-macbook-air-4 = import apple/macbook-air/4;
       apple-macbook-air-6 = import apple/macbook-air/6;
@@ -37,8 +38,11 @@
       lenovo-thinkpad-e470 = import ./lenovo/thinkpad/e470;
       lenovo-thinkpad-e495 = import ./lenovo/thinkpad/e495;
       lenovo-thinkpad-l13 = import ./lenovo/thinkpad/l13;
+      lenovo-thinkpad-l13-yoga = import ./lenovo/thinkpad/l13-yoga/yoga;
       lenovo-thinkpad-l14-intel = import ./lenovo/thinkpad/l14/intel;
       lenovo-thinkpad-l14-amd = import ./lenovo/thinkpad/l14/amd;
+      lenovo-thinkpad-p1 = import ./lenovo/thinkpad/p1;
+      lenovo-thinkpad-p1-gen3 = import ./lenovo/thinkpad/p1/3th-gen;
       lenovo-thinkpad-p53 = import ./lenovo/thinkpad/p53;
       lenovo-thinkpad-t14 = import ./lenovo/thinkpad/t14;
       lenovo-thinkpad-t14-amd-gen1 = import ./lenovo/thinkpad/t14/amd/gen1;
@@ -53,6 +57,7 @@
       lenovo-thinkpad-t460 = import ./lenovo/thinkpad/t460;
       lenovo-thinkpad-t460s = import ./lenovo/thinkpad/t460s;
       lenovo-thinkpad-t470s = import ./lenovo/thinkpad/t470s;
+      lenovo-thinkpad-t480 = import ./lenovo/thinkpad/t480;
       lenovo-thinkpad-t480s = import ./lenovo/thinkpad/t480s;
       lenovo-thinkpad-t490 = import ./lenovo/thinkpad/t490;
       lenovo-thinkpad-t495 = import ./lenovo/thinkpad/t495;
@@ -70,10 +75,9 @@
       lenovo-thinkpad-x1-extreme = import ./lenovo/thinkpad/x1-extreme;
       lenovo-thinkpad-x1-extreme-gen2 = import ./lenovo/thinkpad/x1-extreme/gen2;
       lenovo-thinkpad-x13 = import ./lenovo/thinkpad/x13;
-      lenovo-thinkpad-x13-yoga = import ./lenovo/thinkpad/x13-yoga;
+      lenovo-thinkpad-x13-yoga = import ./lenovo/thinkpad/x13/yoga;
       microsoft-surface = import ./microsoft/surface;
       microsoft-surface-pro-3 = import ./microsoft/surface-pro/3;
-      mnt-reform2-nitrogen8m = import ./mnt/reform2-nitrogen8m;
       pcengines-apu = import ./pcengines/apu;
       raspberry-pi-2 = import ./raspberry-pi/2;
       raspberry-pi-4 = import ./raspberry-pi/4;
