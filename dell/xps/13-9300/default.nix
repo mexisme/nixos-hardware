@@ -20,6 +20,6 @@
   # This will save you money and possibly your life!
   services.thermald.enable = true;
 
-  services.sleep-resume.bluetooth.enable = false;
+  services.sleep-resume.bluetooth.enable = true;
   services.sleep-resume.i2c_designware.enable = true;
 }
