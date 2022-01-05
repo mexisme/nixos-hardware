@@ -75,10 +75,14 @@ See code for all available configurations.
 | [Apple MacBook Pro 12,1](apple/macbook-pro/12-1)                    | `<nixos-hardware/apple/macbook-pro/12-1>`          |
 | [Apple MacBook Pro 10,1](apple/macbook-pro/10-1)                    | `<nixos-hardware/apple/macbook-pro/10-1>`          |
 | [Asus TUF FX504GD](asus/fx504gd)                                    | `<nixos-hardware/asus/fx504gd>`                    |
+| [Asus ROG Strix G733QS](asus/rog-strix/g733qs)                      | `<nixos-hardware/asus/rog-strix/g733qs>`                |
 | [Asus ROG Zephyrus G14 GA401](asus/zephyrus/ga401)                  | `<nixos-hardware/asus/zephyrus/ga401>`             |
 | [BeagleBoard PocketBeagle](beagleboard/pocketbeagle)                | `<nixos-hardware/beagleboard/pocketbeagle>`        |
 | [Dell G3 3779](dell/g3/3779)                                        | `<nixos-hardware/dell/g3/3779>`                    |
+| [Dell Inspiron 5509](dell/inspiron/5509)                            | `<nixos-hardware/dell/inspiron/5509>`              |
 | [Dell Latitude 3480](dell/latitude/3480)                            | `<nixos-hardware/dell/latitude/3480>`              |
+| [Dell Latitude 7490](dell/latitude/7490)                            | `<nixos-hardware/dell/latitude/7490>`              |
+| [Dell Poweredge R7515](dell/poweredge/r7515)                        | `<nixos-hardware/dell/poweredge/r7515>`            |
 | [Dell Precision 5530](dell/precision/5530)                          | `<nixos-hardware/dell/precision/5530>`             |
 | [Dell XPS E7240](dell/e7240)                                        | `<nixos-hardware/dell/e7240>`                      |
 | [Dell XPS 13 7390](dell/xps/13-7390)                                | `<nixos-hardware/dell/xps/13-7390>`                |
@@ -98,7 +102,7 @@ See code for all available configurations.
 | [FriendlyARM NanoPC-T4](friendlyarm/nanopc-t4)                      | `<nixos-hardware/friendlyarm/nanopc-t4>`           |
 | [Google Pixelbook](google/pixelbook)                                | `<nixos-hardware/google/pixelbook>`                |
 | [GPD MicroPC](gpd/micropc)                                          | `<nixos-hardware/gpd/micropc>`                     |
-| [Inverse Path USB armory](inversepath/usbarmory)                    | `<nixos-hardware/inversepath/usbarmory>`           |
+| [Intel NUC 8i7BEH](intel/nuc/8i7beh/)                                     | `<nixos-hardware/intel/nuc/8i7beh>`                |
 | [Lenovo IdeaPad Z510](lenovo/ideapad/z510)                          | `<nixos-hardware/lenovo/ideapad/z510>`             |
 | [Lenovo ThinkPad E14 (Intel)](lenovo/thinkpad/e14/intel)            | `<nixos-hardware/lenovo/thinkpad/e14/intel>`       |
 | [Lenovo ThinkPad E14 (AMD)](lenovo/thinkpad/e14/amd)                | `<nixos-hardware/lenovo/thinkpad/e14/amd>`         |
@@ -129,6 +133,7 @@ See code for all available configurations.
 | [Lenovo ThinkPad T480s](lenovo/thinkpad/t480s)                      | `<nixos-hardware/lenovo/thinkpad/t480s>`           |
 | [Lenovo ThinkPad T490](lenovo/thinkpad/t490)                        | `<nixos-hardware/lenovo/thinkpad/t490>`            |
 | [Lenovo ThinkPad T495](lenovo/thinkpad/t495)                        | `<nixos-hardware/lenovo/thinkpad/t495>`            |
+| [Lenovo ThinkPad T550](lenovo/thinkpad/t550)                        | `<nixos-hardware/lenovo/thinkpad/t550>`            |
 | [Lenovo ThinkPad X13 Yoga](lenovo/thinkpad/x13/yoga)                | `<nixos-hardware/lenovo/thinkpad/x13/yoga>`        |
 | [Lenovo ThinkPad X140e](lenovo/thinkpad/x140e)                      | `<nixos-hardware/lenovo/thinkpad/x140e>`           |
 | [Lenovo ThinkPad X200s](lenovo/thinkpad/x200s)                      | `<nixos-hardware/lenovo/thinkpad/x200s>`           |
@@ -140,10 +145,10 @@ See code for all available configurations.
 | [Lenovo ThinkPad X280](lenovo/thinkpad/x280)                        | `<nixos-hardware/lenovo/thinkpad/x280>`            |
 | [Lenovo ThinkPad X1 (6th Gen)](lenovo/thinkpad/x1/6th-gen)          | `<nixos-hardware/lenovo/thinkpad/x1/6th-gen>`      |
 | [Lenovo ThinkPad X1 (7th Gen)](lenovo/thinkpad/x1/7th-gen)          | `<nixos-hardware/lenovo/thinkpad/x1/7th-gen>`      |
+| [Lenovo ThinkPad X1 (9th Gen)](lenovo/thinkpad/x1/9th-gen)          | `<nixos-hardware/lenovo/thinkpad/x1/9th-gen>`      |
 | [Lenovo ThinkPad X1 Extreme Gen 2](lenovo/thinkpad/x1-extreme/gen2) | `<nixos-hardware/lenovo/thinkpad/x1-extreme/gen2>` |
-| [Lenovo ThinkPad X13](lenovo/thinkpad/x13)                          | `<nixos-hardware/lenovo/thinkpad/x13`              |
-| [Lenovo ThinkPad X13 Yoga](nixos-hardware/lenovo/thinkpad/x13-yoga) | `<nixos-hardware/lenovo/thinkpad/x13-yoga`         |
-| [One-Netbook OneNetbook 4](onenetbook/4)                            | `<nixos-hardware/onenetbook/4`                     |
+| [Lenovo ThinkPad X13](lenovo/thinkpad/x13)                          | `<nixos-hardware/lenovo/thinkpad/x13>`             |
+| [One-Netbook OneNetbook 4](onenetbook/4)                            | `<nixos-hardware/onenetbook/4>`                    |
 | [Microsoft Surface Range](microsoft/surface)                        | `<nixos-hardware/microsoft/surface>`               |
 | [Microsoft Surface Pro 3](microsoft/surface-pro/3)                  | `<nixos-hardware/microsoft/surface-pro/3>`         |
 | [MSI GS60 2QE](msi/gs60)                                            | `<nixos-hardware/msi/gs60>`                        |
@@ -155,6 +160,7 @@ See code for all available configurations.
 | [Purism Librem 15v3](purism/librem/13v3)                            | `<nixos-hardware/purism/librem/15v3>`              |
 | [Supermicro A1SRi-2758F](supermicro/a1sri-2758f)                    | `<nixos-hardware/supermicro/a1sri-2758f>`          |
 | [Supermicro X10SLL-F](supermicro/x10sll-f)                          | `<nixos-hardware/supermicro/x10sll-f>`             |
+| [Supermicro X12SCZ-TLN4F](supermicro/x12scz-tln4f)                  | `<nixos-hardware/supermicro/x12scz-tln4f>`         |
 | [System76 (generic)](system76)                                      | `<nixos-hardware/system76>`                        |
 | [System76 Darter Pro 6](system76/darp6)                             | `<nixos-hardware/system76/darp6>`                  |
 | [Toshiba Chromebook 2 `swanky`](toshiba/swanky)                     | `<nixos-hardware/toshiba/swanky>`                  |
