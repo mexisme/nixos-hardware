@@ -4,7 +4,9 @@
   outputs = { self }: {
     nixosModules = {
       dell-aspire-4810t = import ./acer/aspire/4810t;
+      asus-battery = import ./asus/battery.nix;
       asus-fx504gd = import ./asus/fx504gd;
+      asus-rog-strix-g733qs = import ./asus/rog-strix/g733qs;
       asus-zephyrus-ga401 = import ./asus/zephyrus/ga401;
       apple-macbook-air-3 = import ./apple/macbook-air/3;
       apple-macbook-air-4 = import apple/macbook-air/4;
@@ -13,8 +15,11 @@
       apple-macbook-pro-12-1 = import ./apple/macbook-pro/12-1;
       beagleboard-pocketbeagle = import ./beagleboard/pocketbeagle;
       dell-g3-3779 = import ./dell/g3/3779;
+      dell-inspiron-5509 = import ./dell/inspiron/5509;
       dell-latitude-3480 = import ./dell/latitude/3480;
+      dell-latitude-7490 = import ./dell/latitude/7490;
       dell-precision-5530 = import ./dell/precision/5530;
+      dell-poweredge-r7515 = import ./dell/poweredge/r7515;
       dell-e7240 = import ./dell/e7240;
       dell-xps-13-7390 = import ./dell/xps/13-7390;
       dell-xps-13-9310 = import ./dell/xps/13-9310;
@@ -33,8 +38,9 @@
       friendlyarm-nanopc-t4 = import ./friendlyarm/nanopc-t4;
       google-pixelbook = import ./google/pixelbook;
       gpd-micropc = import ./gpd/micropc;
-      inversepath-usbarmory = import ./inversepath/usbarmory;
+      intel-nuc-8i7beh = import ./intel/nuc/8i7beh;
       lenovo-ideapad-z510 = import ./lenovo/ideapad/z510;
+      lenovo-thinkpad = import ./lenovo/thinkpad;
       lenovo-thinkpad-e14-intel = import ./lenovo/thinkpad/e14/intel;
       lenovo-thinkpad-e14-amd = import ./lenovo/thinkpad/e14/amd;
       lenovo-thinkpad-e470 = import ./lenovo/thinkpad/e470;
@@ -63,6 +69,7 @@
       lenovo-thinkpad-t480s = import ./lenovo/thinkpad/t480s;
       lenovo-thinkpad-t490 = import ./lenovo/thinkpad/t490;
       lenovo-thinkpad-t495 = import ./lenovo/thinkpad/t495;
+      lenovo-thinkpad-t550 = import ./lenovo/thinkpad/t550;
       lenovo-thinkpad-x140e = import ./lenovo/thinkpad/x140e;
       lenovo-thinkpad-x200s = import ./lenovo/thinkpad/x200s;
       lenovo-thinkpad-x220 = import ./lenovo/thinkpad/x220;
@@ -74,6 +81,7 @@
       lenovo-thinkpad-x1 = import ./lenovo/thinkpad/x1;
       lenovo-thinkpad-x1-6th-gen = import ./lenovo/thinkpad/x1/6th-gen;
       lenovo-thinkpad-x1-7th-gen = import ./lenovo/thinkpad/x1/7th-gen;
+      lenovo-thinkpad-x1-9th-gen = import ./lenovo/thinkpad/x1/9th-gen;
       lenovo-thinkpad-x1-extreme = import ./lenovo/thinkpad/x1-extreme;
       lenovo-thinkpad-x1-extreme-gen2 = import ./lenovo/thinkpad/x1-extreme/gen2;
       lenovo-thinkpad-x13 = import ./lenovo/thinkpad/x13;
@@ -90,6 +98,7 @@
       purism-librem-15v3 = import ./purism/librem/15v3;
       supermicro-a1sri-2758f = import ./supermicro/a1sri-2758f;
       supermicro-x10sll-f = import ./supermicro/x10sll-f;
+      supermicro-x12scz-tln4f = import ./supermicro/x12scz-tln4f;
       thoshiba-swanky = import ./toshiba/swanky;
       tuxedo-infinitybook-v4 = import ./tuxedo/infinitybook/v4;
       common-cpu-amd = import ./common/cpu/amd;
