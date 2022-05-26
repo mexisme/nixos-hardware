@@ -15,12 +15,14 @@
       asus-fx504gd = import ./asus/fx504gd;
       asus-rog-strix-g733qs = import ./asus/rog-strix/g733qs;
       asus-zephyrus-ga401 = import ./asus/zephyrus/ga401;
+      asus-zephyrus-ga503 = import ./asus/zephyrus/ga503;
       beagleboard-pocketbeagle = import ./beagleboard/pocketbeagle;
       dell-e7240 = import ./dell/e7240;
       dell-g3-3779 = import ./dell/g3/3779;
       dell-inspiron-5509 = import ./dell/inspiron/5509;
       dell-inspiron-5515 = import ./dell/inspiron/5515;
       dell-latitude-3480 = import ./dell/latitude/3480;
+      dell-latitude-5520 = import ./dell/latitude/5520;
       dell-latitude-7490 = import ./dell/latitude/7490;
       dell-poweredge-r7515 = import ./dell/poweredge/r7515;
       dell-precision-5530 = import ./dell/precision/5530;
@@ -38,6 +40,8 @@
       dell-xps-15-9560 = import ./dell/xps/15-9560;
       dell-xps-15-9560-intel = import ./dell/xps/15-9560/intel;
       dell-xps-15-9560-nvidia = import ./dell/xps/15-9560/nvidia;
+      dell-xps-17-9700-intel = import ./dell/xps/17-9700/intel;
+      dell-xps-17-9700-nvidia = import ./dell/xps/17-9700/nvidia;
       dell-xps-17-9710-intel = import ./dell/xps/17-9710/intel;
       framework = import ./framework;
       friendlyarm-nanopc-t4 = import ./friendlyarm/nanopc-t4;
@@ -46,6 +50,7 @@
       hp-elitebook-2560p = import ./hp/elitebook/2560p;
       intel-nuc-8i7beh = import ./intel/nuc/8i7beh;
       lenovo-ideapad-z510 = import ./lenovo/ideapad/z510;
+      lenovo-legion-15ach6 = import ./lenovo/legion/15ach6;
       lenovo-legion-15arh05h = import ./lenovo/legion/15arh05h;
       lenovo-thinkpad = import ./lenovo/thinkpad;
       lenovo-thinkpad-e14-amd = import ./lenovo/thinkpad/e14/amd;
@@ -80,6 +85,7 @@
       lenovo-thinkpad-t495 = import ./lenovo/thinkpad/t495;
       lenovo-thinkpad-t550 = import ./lenovo/thinkpad/t550;
       lenovo-thinkpad-x1 = import ./lenovo/thinkpad/x1;
+      lenovo-thinkpad-x1-yoga = import ./lenovo/thinkpad/x1/yoga;
       lenovo-thinkpad-x1-6th-gen = import ./lenovo/thinkpad/x1/6th-gen;
       lenovo-thinkpad-x1-7th-gen = import ./lenovo/thinkpad/x1/7th-gen;
       lenovo-thinkpad-x1-9th-gen = import ./lenovo/thinkpad/x1/9th-gen;
@@ -100,6 +106,7 @@
       msi-gs60 = import ./msi/gs60;
       onenetbook-4 = import ./onenetbook/4;
       pcengines-apu = import ./pcengines/apu;
+      pine64-pinebook-pro = import ./pine64/pinebook-pro;
       purism-librem-13v3 = import ./purism/librem/13v3;
       purism-librem-15v3 = import ./purism/librem/15v3;
       raspberry-pi-2 = import ./raspberry-pi/2;
@@ -117,6 +124,7 @@
 
       common-cpu-amd = import ./common/cpu/amd;
       common-cpu-intel = import ./common/cpu/intel;
+      common-cpu-intel-cpu-only = import ./common/cpu/intel/cpu-only.nix;
       common-cpu-intel-kaby-lake = import ./common/cpu/intel/kaby-lake;
       common-cpu-intel-sandy-bridge = import ./common/cpu/intel/sandy-bridge;
       common-gpu-amd = import ./common/gpu/amd;

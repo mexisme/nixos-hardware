@@ -47,7 +47,6 @@ There is also experimental flake support. In your `/etc/nixos/flake.nix` add the
 }
 ```
 
-
 ### Using fetchGit
 
 You can fetch the git repository directly:
@@ -66,7 +65,7 @@ you can easily pin to a particular revision if you desire more stability.
 See code for all available configurations.
 
 | Model                                                               | Path                                               |
-|---------------------------------------------------------------------|----------------------------------------------------|
+| ------------------------------------------------------------------- | -------------------------------------------------- |
 | [Acer Aspire 4810T](acer/aspire/4810t)                              | `<nixos-hardware/acer/aspire/4810t>`               |
 | [Airis N990](airis/n990)                                            | `<nixos-hardware/airis/n990>`                      |
 | [Apple MacBook Air 3,X](apple/macbook-air/3)                        | `<nixos-hardware/apple/macbook-air/3>`             |
@@ -76,12 +75,14 @@ See code for all available configurations.
 | [Apple MacBook Pro 12,1](apple/macbook-pro/12-1)                    | `<nixos-hardware/apple/macbook-pro/12-1>`          |
 | [Asus ROG Strix G733QS](asus/rog-strix/g733qs)                      | `<nixos-hardware/asus/rog-strix/g733qs>`           |
 | [Asus ROG Zephyrus G14 GA401](asus/zephyrus/ga401)                  | `<nixos-hardware/asus/zephyrus/ga401>`             |
+| [Asus ROG Zephyrus G15 GA503](asus/zephyrus/ga503)                  | `<nixos-hardware/asus/zephyrus/ga503>`             |
 | [Asus TUF FX504GD](asus/fx504gd)                                    | `<nixos-hardware/asus/fx504gd>`                    |
 | [BeagleBoard PocketBeagle](beagleboard/pocketbeagle)                | `<nixos-hardware/beagleboard/pocketbeagle>`        |
 | [Dell G3 3779](dell/g3/3779)                                        | `<nixos-hardware/dell/g3/3779>`                    |
 | [Dell Inspiron 5509](dell/inspiron/5509)                            | `<nixos-hardware/dell/inspiron/5509>`              |
 | [Dell Inspiron 5515](dell/inspiron/5515)                            | `<nixos-hardware/dell/inspiron/5515>`              |
 | [Dell Latitude 3480](dell/latitude/3480)                            | `<nixos-hardware/dell/latitude/3480>`              |
+| [Dell Latitude 5520](dell/latitude/5520)                            | `<nixos-hardware/dell/latitude/5520>`              |
 | [Dell Latitude 7490](dell/latitude/7490)                            | `<nixos-hardware/dell/latitude/7490>`              |
 | [Dell Poweredge R7515](dell/poweredge/r7515)                        | `<nixos-hardware/dell/poweredge/r7515>`            |
 | [Dell Precision 5530](dell/precision/5530)                          | `<nixos-hardware/dell/precision/5530>`             |
@@ -94,6 +95,8 @@ See code for all available configurations.
 | [Dell XPS 15 7590](dell/xps/15-7590)                                | `<nixos-hardware/dell/xps/15-7590>`                |
 | [Dell XPS 15 9500, nvidia](dell/xps/15-9500/nvidia)                 | `<nixos-hardware/dell/xps/15-9500/nvidia>`         |
 | [Dell XPS 15 9500](dell/xps/15-9500)                                | `<nixos-hardware/dell/xps/15-9500>`                |
+| [Dell XPS 17 9700, intel](dell/xps/15-9700/intel)                   | `<nixos-hardware/dell/xps/17-9700/intel`           |
+| [Dell XPS 17 9700, nvidia](dell/xps/15-9700/nvidia)                 | `<nixos-hardware/dell/xps/17-9700/nvidia>`         |
 | [Dell XPS 15 9550, nvidia](dell/xps/15-9550/nvidia)                 | `<nixos-hardware/dell/xps/15-9550/nvidia>`         |
 | [Dell XPS 15 9550](dell/xps/15-9550)                                | `<nixos-hardware/dell/xps/15-9550>`                |
 | [Dell XPS 15 9560, intel only](dell/xps/15-9560/intel)              | `<nixos-hardware/dell/xps/15-9560/intel>`          |
@@ -109,6 +112,7 @@ See code for all available configurations.
 | [Intel NUC 8i7BEH](intel/nuc/8i7beh/)                               | `<nixos-hardware/intel/nuc/8i7beh>`                |
 | [Lenovo IdeaPad Z510](lenovo/ideapad/z510)                          | `<nixos-hardware/lenovo/ideapad/z510>`             |
 | [Lenovo Legion 5 15arh05h](lenovo/legion/15arh05h)                  | `<nixos-hardware/lenovo/legion/15arh05h>`          |
+| [Lenovo Legion 7 Slim 15ach6](lenovo/legion/15ach6)                 | `<nixos-hardware/lenovo/legion/15ach6>`            |
 | [Lenovo ThinkPad E14 (AMD)](lenovo/thinkpad/e14/amd)                | `<nixos-hardware/lenovo/thinkpad/e14/amd>`         |
 | [Lenovo ThinkPad E14 (Intel)](lenovo/thinkpad/e14/intel)            | `<nixos-hardware/lenovo/thinkpad/e14/intel>`       |
 | [Lenovo ThinkPad E470](lenovo/thinkpad/e470)                        | `<nixos-hardware/lenovo/thinkpad/e470>`            |
@@ -140,6 +144,7 @@ See code for all available configurations.
 | [Lenovo ThinkPad T490](lenovo/thinkpad/t490)                        | `<nixos-hardware/lenovo/thinkpad/t490>`            |
 | [Lenovo ThinkPad T495](lenovo/thinkpad/t495)                        | `<nixos-hardware/lenovo/thinkpad/t495>`            |
 | [Lenovo ThinkPad T550](lenovo/thinkpad/t550)                        | `<nixos-hardware/lenovo/thinkpad/t550>`            |
+| [Lenovo ThinkPad X1 Yoga](lenovo/thinkpad/x1/yoga)                  | `<nixos-hardware/lenovo/thinkpad/x1/yoga>`         |
 | [Lenovo ThinkPad X1 (6th Gen)](lenovo/thinkpad/x1/6th-gen)          | `<nixos-hardware/lenovo/thinkpad/x1/6th-gen>`      |
 | [Lenovo ThinkPad X1 (7th Gen)](lenovo/thinkpad/x1/7th-gen)          | `<nixos-hardware/lenovo/thinkpad/x1/7th-gen>`      |
 | [Lenovo ThinkPad X1 (9th Gen)](lenovo/thinkpad/x1/9th-gen)          | `<nixos-hardware/lenovo/thinkpad/x1/9th-gen>`      |
@@ -159,6 +164,7 @@ See code for all available configurations.
 | [Microsoft Surface Range](microsoft/surface)                        | `<nixos-hardware/microsoft/surface>`               |
 | [One-Netbook OneNetbook 4](onenetbook/4)                            | `<nixos-hardware/onenetbook/4>`                    |
 | [PC Engines APU](pcengines/apu)                                     | `<nixos-hardware/pcengines/apu>`                   |
+| [PINE64 Pinebook Pro](pine64/pinebook-pro/)                         | `<nixos-hardware/pine64/pinebook-pro>`             |
 | [Purism Librem 13v3](purism/librem/13v3)                            | `<nixos-hardware/purism/librem/13v3>`              |
 | [Purism Librem 15v3](purism/librem/13v3)                            | `<nixos-hardware/purism/librem/15v3>`              |
 | [Raspberry Pi 2](raspberry-pi/2)                                    | `<nixos-hardware/raspberry-pi/2>`                  |
