@@ -8,6 +8,7 @@
       apple-macbook-air-3 = import ./apple/macbook-air/3;
       apple-macbook-air-4 = import ./apple/macbook-air/4;
       apple-macbook-air-6 = import ./apple/macbook-air/6;
+      apple-macbook-pro = import ./apple/macbook-pro;
       apple-macbook-pro-10-1 = import ./apple/macbook-pro/10-1;
       apple-macbook-pro-11-5 = import ./apple/macbook-pro/11-5;
       apple-macbook-pro-12-1 = import ./apple/macbook-pro/12-1;
@@ -52,6 +53,7 @@
       lenovo-ideapad-z510 = import ./lenovo/ideapad/z510;
       lenovo-legion-15ach6 = import ./lenovo/legion/15ach6;
       lenovo-legion-15arh05h = import ./lenovo/legion/15arh05h;
+      lenovo-legion-16ithg6 = import ./lenovo/legion/16ithg6;
       lenovo-thinkpad = import ./lenovo/thinkpad;
       lenovo-thinkpad-e14-amd = import ./lenovo/thinkpad/e14/amd;
       lenovo-thinkpad-e14-intel = import ./lenovo/thinkpad/e14/intel;
@@ -91,6 +93,7 @@
       lenovo-thinkpad-x1-9th-gen = import ./lenovo/thinkpad/x1/9th-gen;
       lenovo-thinkpad-x1-extreme = import ./lenovo/thinkpad/x1-extreme;
       lenovo-thinkpad-x1-extreme-gen2 = import ./lenovo/thinkpad/x1-extreme/gen2;
+      lenovo-thinkpad-x1-extreme-gen4 = import ./lenovo/thinkpad/x1-extreme/gen4;
       lenovo-thinkpad-x13 = import ./lenovo/thinkpad/x13;
       lenovo-thinkpad-x13-yoga = import ./lenovo/thinkpad/x13/yoga;
       lenovo-thinkpad-x140e = import ./lenovo/thinkpad/x140e;
@@ -104,6 +107,7 @@
       microsoft-surface = import ./microsoft/surface;
       microsoft-surface-pro-3 = import ./microsoft/surface-pro/3;
       msi-gs60 = import ./msi/gs60;
+      msi-gl62 = import ./msi/gl62;
       onenetbook-4 = import ./onenetbook/4;
       pcengines-apu = import ./pcengines/apu;
       pine64-pinebook-pro = import ./pine64/pinebook-pro;
@@ -130,6 +134,7 @@
       common-gpu-amd = import ./common/gpu/amd;
       common-gpu-amd-sea-islands = import ./common/gpu/amd/sea-islands;
       common-gpu-amd-southern-islands = import ./common/gpu/amd/southern-islands;
+      common-gpu-intel = import ./common/gpu/intel.nix;
       common-gpu-nvidia = import ./common/gpu/nvidia.nix;
       common-gpu-nvidia-disable = import ./common/gpu/nvidia-disable.nix;
       common-pc = import ./common/pc;
