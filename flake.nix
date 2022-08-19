@@ -30,6 +30,7 @@
       dell-xps-13-7390 = import ./dell/xps/13-7390;
       dell-xps-13-9310 = import ./dell/xps/13-9310;
       dell-xps-13-9343 = import ./dell/xps/13-9343;
+      dell-xps-13-9350 = import ./dell/xps/13-9350;
       dell-xps-13-9360 = import ./dell/xps/13-9360;
       dell-xps-13-9370 = import ./dell/xps/13-9370;
       dell-xps-13-9380 = import ./dell/xps/13-9380;
@@ -66,6 +67,9 @@
       lenovo-thinkpad-p1 = import ./lenovo/thinkpad/p1;
       lenovo-thinkpad-p1-gen3 = import ./lenovo/thinkpad/p1/3th-gen;
       lenovo-thinkpad-p14s-amd-gen2 = import ./lenovo/thinkpad/p14s/amd/gen2;
+      lenovo-thinkpad-p50 = import ./lenovo/thinkpad/p50;
+      lenovo-thinkpad-p51 = import ./lenovo/thinkpad/p51;
+      lenovo-thinkpad-p52 = import ./lenovo/thinkpad/p52;
       lenovo-thinkpad-p53 = import ./lenovo/thinkpad/p53;
       lenovo-thinkpad-t14 = import ./lenovo/thinkpad/t14;
       lenovo-thinkpad-t14-amd-gen1 = import ./lenovo/thinkpad/t14/amd/gen1;
@@ -79,6 +83,7 @@
       lenovo-thinkpad-t440s = import ./lenovo/thinkpad/t440s;
       lenovo-thinkpad-t450s = import ./lenovo/thinkpad/t450s;
       lenovo-thinkpad-t460 = import ./lenovo/thinkpad/t460;
+      lenovo-thinkpad-t460p = import ./lenovo/thinkpad/t460p;
       lenovo-thinkpad-t460s = import ./lenovo/thinkpad/t460s;
       lenovo-thinkpad-t470s = import ./lenovo/thinkpad/t470s;
       lenovo-thinkpad-t480 = import ./lenovo/thinkpad/t480;
@@ -127,6 +132,7 @@
       tuxedo-infinitybook-v4 = import ./tuxedo/infinitybook/v4;
 
       common-cpu-amd = import ./common/cpu/amd;
+      common-cpu-amd-pstate = import ./common/cpu/amd/pstate.nix;
       common-cpu-intel = import ./common/cpu/intel;
       common-cpu-intel-cpu-only = import ./common/cpu/intel/cpu-only.nix;
       common-cpu-intel-kaby-lake = import ./common/cpu/intel/kaby-lake;

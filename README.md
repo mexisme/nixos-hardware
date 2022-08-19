@@ -89,6 +89,7 @@ See code for all available configurations.
 | [Dell XPS 13 7390](dell/xps/13-7390)                                | `<nixos-hardware/dell/xps/13-7390>`                |
 | [Dell XPS 13 9310](dell/xps/13-9310)                                | `<nixos-hardware/dell/xps/13-9310>`                |
 | [Dell XPS 13 9343](dell/xps/13-9343)                                | `<nixos-hardware/dell/xps/13-9343>`                |
+| [Dell XPS 13 9350](dell/xps/13-9350)                                | `<nixos-hardware/dell/xps/13-9350>`                |
 | [Dell XPS 13 9360](dell/xps/13-9360)                                | `<nixos-hardware/dell/xps/13-9360>`                |
 | [Dell XPS 13 9370](dell/xps/13-9370)                                | `<nixos-hardware/dell/xps/13-9370>`                |
 | [Dell XPS 13 9380](dell/xps/13-9380)                                | `<nixos-hardware/dell/xps/13-9380>`                |
@@ -124,6 +125,9 @@ See code for all available configurations.
 | [Lenovo ThinkPad P1 Gen 3](lenovo/thinkpad/p1/3th-gen)              | `<nixos-hardware/lenovo/thinkpad/p1/3th-gen>`      |
 | [Lenovo ThinkPad P14s AMD Gen 2](lenovo/thinkpad/p14s/amd/gen2)     | `<nixos-hardware/lenovo/thinkpad/p14s/amd/gen2>`   |
 | [Lenovo ThinkPad P1](thinkpad/p1)                                   | `<nixos-hardware/lenovo/thinkpad/p1>`              |
+| [Lenovo ThinkPad P50](lenovo/thinkpad/p50)                          | `<nixos-hardware/lenovo/thinkpad/p50>`             |
+| [Lenovo ThinkPad P51](lenovo/thinkpad/p51)                          | `<nixos-hardware/lenovo/thinkpad/p51>`             |
+| [Lenovo ThinkPad P52](lenovo/thinkpad/p52)                          | `<nixos-hardware/lenovo/thinkpad/p52>`             |
 | [Lenovo ThinkPad P53](lenovo/thinkpad/p53)                          | `<nixos-hardware/lenovo/thinkpad/p53>`             |
 | [Lenovo ThinkPad T14 AMD Gen 1](lenovo/thinkpad/t14/amd/gen1)       | `<nixos-hardware/lenovo/thinkpad/t14/amd/gen1>`    |
 | [Lenovo ThinkPad T14 AMD Gen 2](lenovo/thinkpad/t14/amd/gen2)       | `<nixos-hardware/lenovo/thinkpad/t14/amd/gen2>`    |
@@ -137,6 +141,7 @@ See code for all available configurations.
 | [Lenovo ThinkPad T440s](lenovo/thinkpad/t440s)                      | `<nixos-hardware/lenovo/thinkpad/t440s>`           |
 | [Lenovo ThinkPad T450s](lenovo/thinkpad/t450s)                      | `<nixos-hardware/lenovo/thinkpad/t450s>`           |
 | [Lenovo ThinkPad T460](lenovo/thinkpad/t460)                        | `<nixos-hardware/lenovo/thinkpad/t460>`            |
+| [Lenovo ThinkPad T460p](lenovo/thinkpad/t460p)                      | `<nixos-hardware/lenovo/thinkpad/t460p>`           |
 | [Lenovo ThinkPad T460s](lenovo/thinkpad/t460s)                      | `<nixos-hardware/lenovo/thinkpad/t460s>`           |
 | [Lenovo ThinkPad T470s](lenovo/thinkpad/t470s)                      | `<nixos-hardware/lenovo/thinkpad/t470s>`           |
 | [Lenovo ThinkPad T480](lenovo/thinkpad/t480)                        | `<nixos-hardware/lenovo/thinkpad/t480>`            |
