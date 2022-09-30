@@ -22,6 +22,7 @@
       dell-g3-3779 = import ./dell/g3/3779;
       dell-inspiron-5509 = import ./dell/inspiron/5509;
       dell-inspiron-5515 = import ./dell/inspiron/5515;
+      dell-inspiron-7405 = import ./dell/inspiron/7405;
       dell-latitude-3480 = import ./dell/latitude/3480;
       dell-latitude-5520 = import ./dell/latitude/5520;
       dell-latitude-7490 = import ./dell/latitude/7490;
@@ -46,11 +47,13 @@
       dell-xps-17-9700-nvidia = import ./dell/xps/17-9700/nvidia;
       dell-xps-17-9710-intel = import ./dell/xps/17-9710/intel;
       framework = import ./framework;
+      framework-12th-gen-intel = import ./framework/12th-gen-intel;
       friendlyarm-nanopc-t4 = import ./friendlyarm/nanopc-t4;
       google-pixelbook = import ./google/pixelbook;
       gpd-micropc = import ./gpd/micropc;
       hp-elitebook-2560p = import ./hp/elitebook/2560p;
       intel-nuc-8i7beh = import ./intel/nuc/8i7beh;
+      lenovo-ideapad-15arh05 = import ./lenovo/ideapad/15arh05;
       lenovo-ideapad-z510 = import ./lenovo/ideapad/z510;
       lenovo-legion-15ach6 = import ./lenovo/legion/15ach6;
       lenovo-legion-15arh05h = import ./lenovo/legion/15arh05h;
@@ -67,6 +70,7 @@
       lenovo-thinkpad-p1 = import ./lenovo/thinkpad/p1;
       lenovo-thinkpad-p1-gen3 = import ./lenovo/thinkpad/p1/3th-gen;
       lenovo-thinkpad-p14s-amd-gen2 = import ./lenovo/thinkpad/p14s/amd/gen2;
+      lenovo-thinkpad-p16s-amd-gen1 = import ./lenovo/thinkpad/p16s/amd/gen1;
       lenovo-thinkpad-p50 = import ./lenovo/thinkpad/p50;
       lenovo-thinkpad-p51 = import ./lenovo/thinkpad/p51;
       lenovo-thinkpad-p52 = import ./lenovo/thinkpad/p52;
@@ -74,6 +78,7 @@
       lenovo-thinkpad-t14 = import ./lenovo/thinkpad/t14;
       lenovo-thinkpad-t14-amd-gen1 = import ./lenovo/thinkpad/t14/amd/gen1;
       lenovo-thinkpad-t14-amd-gen2 = import ./lenovo/thinkpad/t14/amd/gen2;
+      lenovo-thinkpad-t14-amd-gen3 = import ./lenovo/thinkpad/t14/amd/gen3;
       lenovo-thinkpad-t14s = import ./lenovo/thinkpad/t14s;
       lenovo-thinkpad-t14s-amd-gen1 = import ./lenovo/thinkpad/t14s/amd/gen1;
       lenovo-thinkpad-t410 = import ./lenovo/thinkpad/t410;
@@ -91,6 +96,7 @@
       lenovo-thinkpad-t490 = import ./lenovo/thinkpad/t490;
       lenovo-thinkpad-t495 = import ./lenovo/thinkpad/t495;
       lenovo-thinkpad-t550 = import ./lenovo/thinkpad/t550;
+      lenovo-thinkpad-t590 = import ./lenovo/thinkpad/t590;
       lenovo-thinkpad-x1 = import ./lenovo/thinkpad/x1;
       lenovo-thinkpad-x1-yoga = import ./lenovo/thinkpad/x1/yoga;
       lenovo-thinkpad-x1-6th-gen = import ./lenovo/thinkpad/x1/6th-gen;
@@ -109,10 +115,13 @@
       lenovo-thinkpad-x260 = import ./lenovo/thinkpad/x260;
       lenovo-thinkpad-x270 = import ./lenovo/thinkpad/x270;
       lenovo-thinkpad-x280 = import ./lenovo/thinkpad/x280;
+      lenovo-thinkpad-z = import ./lenovo/thinkpad/z;
+      lenovo-thinkpad-z13 = import ./lenovo/thinkpad/z/z13;
       microsoft-surface = import ./microsoft/surface;
       microsoft-surface-pro-3 = import ./microsoft/surface-pro/3;
       msi-gs60 = import ./msi/gs60;
       msi-gl62 = import ./msi/gl62;
+      omen-en00015p = import ./omen/en00015p;
       onenetbook-4 = import ./onenetbook/4;
       pcengines-apu = import ./pcengines/apu;
       pine64-pinebook-pro = import ./pine64/pinebook-pro;
@@ -120,6 +129,7 @@
       purism-librem-15v3 = import ./purism/librem/15v3;
       raspberry-pi-2 = import ./raspberry-pi/2;
       raspberry-pi-4 = import ./raspberry-pi/4;
+      kobol-helios4 = import ./kobol/helios4;
       samsung-np900x3c = import ./samsung/np900x3c;
       supermicro = import ./supermicro;
       supermicro-a1sri-2758f = import ./supermicro/a1sri-2758f;

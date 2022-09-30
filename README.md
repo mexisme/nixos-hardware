@@ -24,14 +24,15 @@ imports = [
 
 New updates to the expressions here will be fetched when you update the channel.
 
-## Using nix flakes support
+### Using nix flakes support
 
-There is also experimental flake support. In your `/etc/nixos/flake.nix` add the following:
+There is also experimental flake support. In your `/etc/nixos/flake.nix` add
+the following:
 
 ```nix
 {
   description = "NixOS configuration with flakes";
-  inputs.nixos-hardware.url = github:NixOS/nixos-hardware/master;
+  inputs.nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
   outputs = { self, nixpkgs, nixos-hardware }: {
     # replace <your-hostname> with your actual hostname
@@ -60,6 +61,10 @@ imports = [
 Unlike the channel, this will update the git repository on a rebuild. However,
 you can easily pin to a particular revision if you desire more stability.
 
+## How to contribute a new device profile
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
 ## List of Profiles
 
 See code for all available configurations.
@@ -72,6 +77,7 @@ See code for all available configurations.
 | [Apple MacBook Air 4,X](apple/macbook-air/4)                        | `<nixos-hardware/apple/macbook-air/4>`             |
 | [Apple MacBook Air 6,X](apple/macbook-air/6)                        | `<nixos-hardware/apple/macbook-air/6>`             |
 | [Apple MacBook Pro 10,1](apple/macbook-pro/10-1)                    | `<nixos-hardware/apple/macbook-pro/10-1>`          |
+| [Apple MacBook Pro 11,5](apple/macbook-pro/11-5)                    | `<nixos-hardware/apple/macbook-pro/11-5>`          |
 | [Apple MacBook Pro 12,1](apple/macbook-pro/12-1)                    | `<nixos-hardware/apple/macbook-pro/12-1>`          |
 | [Asus ROG Strix G733QS](asus/rog-strix/g733qs)                      | `<nixos-hardware/asus/rog-strix/g733qs>`           |
 | [Asus ROG Zephyrus G14 GA401](asus/zephyrus/ga401)                  | `<nixos-hardware/asus/zephyrus/ga401>`             |
@@ -81,6 +87,7 @@ See code for all available configurations.
 | [Dell G3 3779](dell/g3/3779)                                        | `<nixos-hardware/dell/g3/3779>`                    |
 | [Dell Inspiron 5509](dell/inspiron/5509)                            | `<nixos-hardware/dell/inspiron/5509>`              |
 | [Dell Inspiron 5515](dell/inspiron/5515)                            | `<nixos-hardware/dell/inspiron/5515>`              |
+| [Dell Inspiron 7405](dell/inspiron/7405)                            | `<nixos-hardware/dell/inspiron/7405>`              |
 | [Dell Latitude 3480](dell/latitude/3480)                            | `<nixos-hardware/dell/latitude/3480>`              |
 | [Dell Latitude 5520](dell/latitude/5520)                            | `<nixos-hardware/dell/latitude/5520>`              |
 | [Dell Latitude 7490](dell/latitude/7490)                            | `<nixos-hardware/dell/latitude/7490>`              |
@@ -96,21 +103,23 @@ See code for all available configurations.
 | [Dell XPS 15 7590](dell/xps/15-7590)                                | `<nixos-hardware/dell/xps/15-7590>`                |
 | [Dell XPS 15 9500, nvidia](dell/xps/15-9500/nvidia)                 | `<nixos-hardware/dell/xps/15-9500/nvidia>`         |
 | [Dell XPS 15 9500](dell/xps/15-9500)                                | `<nixos-hardware/dell/xps/15-9500>`                |
-| [Dell XPS 17 9700, intel](dell/xps/15-9700/intel)                   | `<nixos-hardware/dell/xps/17-9700/intel`           |
-| [Dell XPS 17 9700, nvidia](dell/xps/15-9700/nvidia)                 | `<nixos-hardware/dell/xps/17-9700/nvidia>`         |
 | [Dell XPS 15 9550, nvidia](dell/xps/15-9550/nvidia)                 | `<nixos-hardware/dell/xps/15-9550/nvidia>`         |
 | [Dell XPS 15 9550](dell/xps/15-9550)                                | `<nixos-hardware/dell/xps/15-9550>`                |
 | [Dell XPS 15 9560, intel only](dell/xps/15-9560/intel)              | `<nixos-hardware/dell/xps/15-9560/intel>`          |
 | [Dell XPS 15 9560, nvidia only](dell/xps/15-9560/nvidia)            | `<nixos-hardware/dell/xps/15-9560/nvidia>`         |
 | [Dell XPS 15 9560](dell/xps/15-9560)                                | `<nixos-hardware/dell/xps/15-9560>`                |
+| [Dell XPS 17 9700, intel](dell/xps/17-9700/intel)                   | `<nixos-hardware/dell/xps/17-9700/intel`           |
+| [Dell XPS 17 9700, nvidia](dell/xps/17-9700/nvidia)                 | `<nixos-hardware/dell/xps/17-9700/nvidia>`         |
 | [Dell XPS 17 9710, intel only](dell/xps/17-9710/intel)              | `<nixos-hardware/dell/xps/17-9710/intel>`          |
 | [Dell XPS E7240](dell/e7240)                                        | `<nixos-hardware/dell/e7240>`                      |
 | [Framework](framework)                                              | `<nixos-hardware/framework>`                       |
+| [Framework 12th Gen Intel Core](framework/12th-gen-intel)           | `<nixos-hardware/framework/12th-gen-intel>`        |
 | [FriendlyARM NanoPC-T4](friendlyarm/nanopc-t4)                      | `<nixos-hardware/friendlyarm/nanopc-t4>`           |
 | [GPD MicroPC](gpd/micropc)                                          | `<nixos-hardware/gpd/micropc>`                     |
 | [Google Pixelbook](google/pixelbook)                                | `<nixos-hardware/google/pixelbook>`                |
 | [HP Elitebook 2560p](hp/elitebook/2560p)                            | `<nixos-hardware/hp/elitebook/2560p>`              |
 | [Intel NUC 8i7BEH](intel/nuc/8i7beh/)                               | `<nixos-hardware/intel/nuc/8i7beh>`                |
+| [Lenovo IdeaPad Gaming 3 15arh05](lenovo/ideapad/15arh05)           | `<nixos-hardware/lenovo/ideapad/15arh05>`          |
 | [Lenovo IdeaPad Z510](lenovo/ideapad/z510)                          | `<nixos-hardware/lenovo/ideapad/z510>`             |
 | [Lenovo Legion 5 15arh05h](lenovo/legion/15arh05h)                  | `<nixos-hardware/lenovo/legion/15arh05h>`          |
 | [Lenovo Legion 7 Slim 15ach6](lenovo/legion/15ach6)                 | `<nixos-hardware/lenovo/legion/15ach6>`            |
@@ -124,13 +133,15 @@ See code for all available configurations.
 | [Lenovo ThinkPad L14 (Intel)](lenovo/thinkpad/l14/intel)            | `<nixos-hardware/lenovo/thinkpad/l14/intel>`       |
 | [Lenovo ThinkPad P1 Gen 3](lenovo/thinkpad/p1/3th-gen)              | `<nixos-hardware/lenovo/thinkpad/p1/3th-gen>`      |
 | [Lenovo ThinkPad P14s AMD Gen 2](lenovo/thinkpad/p14s/amd/gen2)     | `<nixos-hardware/lenovo/thinkpad/p14s/amd/gen2>`   |
-| [Lenovo ThinkPad P1](thinkpad/p1)                                   | `<nixos-hardware/lenovo/thinkpad/p1>`              |
+| [Lenovo ThinkPad P16s AMD Gen 1](lenovo/thinkpad/p16s/amd/gen1)     | `<nixos-hardware/lenovo/thinkpad/p16s/amd/gen1>`   |
+| [Lenovo ThinkPad P1](lenovo/thinkpad/p1)                            | `<nixos-hardware/lenovo/thinkpad/p1>`              |
 | [Lenovo ThinkPad P50](lenovo/thinkpad/p50)                          | `<nixos-hardware/lenovo/thinkpad/p50>`             |
 | [Lenovo ThinkPad P51](lenovo/thinkpad/p51)                          | `<nixos-hardware/lenovo/thinkpad/p51>`             |
 | [Lenovo ThinkPad P52](lenovo/thinkpad/p52)                          | `<nixos-hardware/lenovo/thinkpad/p52>`             |
 | [Lenovo ThinkPad P53](lenovo/thinkpad/p53)                          | `<nixos-hardware/lenovo/thinkpad/p53>`             |
 | [Lenovo ThinkPad T14 AMD Gen 1](lenovo/thinkpad/t14/amd/gen1)       | `<nixos-hardware/lenovo/thinkpad/t14/amd/gen1>`    |
 | [Lenovo ThinkPad T14 AMD Gen 2](lenovo/thinkpad/t14/amd/gen2)       | `<nixos-hardware/lenovo/thinkpad/t14/amd/gen2>`    |
+| [Lenovo ThinkPad T14 AMD Gen 3](lenovo/thinkpad/t14/amd/gen3)       | `<nixos-hardware/lenovo/thinkpad/t14/amd/gen3>`    |
 | [Lenovo ThinkPad T14](lenovo/thinkpad/t14)                          | `<nixos-hardware/lenovo/thinkpad/t14>`             |
 | [Lenovo ThinkPad T14s AMD Gen 1](lenovo/thinkpad/t14s/amd/gen1)     | `<nixos-hardware/lenovo/thinkpad/t14s/amd/gen1>`   |
 | [Lenovo ThinkPad T14s](lenovo/thinkpad/t14s)                        | `<nixos-hardware/lenovo/thinkpad/t14s>`            |
@@ -149,6 +160,7 @@ See code for all available configurations.
 | [Lenovo ThinkPad T490](lenovo/thinkpad/t490)                        | `<nixos-hardware/lenovo/thinkpad/t490>`            |
 | [Lenovo ThinkPad T495](lenovo/thinkpad/t495)                        | `<nixos-hardware/lenovo/thinkpad/t495>`            |
 | [Lenovo ThinkPad T550](lenovo/thinkpad/t550)                        | `<nixos-hardware/lenovo/thinkpad/t550>`            |
+| [Lenovo ThinkPad T590](lenovo/thinkpad/t590)                        | `<nixos-hardware/lenovo/thinkpad/t590>`            |
 | [Lenovo ThinkPad X1 Yoga](lenovo/thinkpad/x1/yoga)                  | `<nixos-hardware/lenovo/thinkpad/x1/yoga>`         |
 | [Lenovo ThinkPad X1 (6th Gen)](lenovo/thinkpad/x1/6th-gen)          | `<nixos-hardware/lenovo/thinkpad/x1/6th-gen>`      |
 | [Lenovo ThinkPad X1 (7th Gen)](lenovo/thinkpad/x1/7th-gen)          | `<nixos-hardware/lenovo/thinkpad/x1/7th-gen>`      |
@@ -165,10 +177,13 @@ See code for all available configurations.
 | [Lenovo ThinkPad X260](lenovo/thinkpad/x260)                        | `<nixos-hardware/lenovo/thinkpad/x260>`            |
 | [Lenovo ThinkPad X270](lenovo/thinkpad/x270)                        | `<nixos-hardware/lenovo/thinkpad/x270>`            |
 | [Lenovo ThinkPad X280](lenovo/thinkpad/x280)                        | `<nixos-hardware/lenovo/thinkpad/x280>`            |
+| [Lenovo ThinkPad Z Series](lenovo/thinkpad/z)                       | `<nixos-hardware/lenovo/thinkpad/z>`               |
+| [Lenovo ThinkPad Z13](lenovo/thinkpad/z/z13)                        | `<nixos-hardware/lenovo/thinkpad/z/z13>`           |
 | [MSI GS60 2QE](msi/gs60)                                            | `<nixos-hardware/msi/gs60>`                        |
 | [MSI GL62/CX62](msi/gl62)                                           | `<nixos-hardware/msi/gl62>`                        |
 | [Microsoft Surface Pro 3](microsoft/surface-pro/3)                  | `<nixos-hardware/microsoft/surface-pro/3>`         |
 | [Microsoft Surface Range](microsoft/surface)                        | `<nixos-hardware/microsoft/surface>`               |
+| [Omen en00015p](omen/en00015p)                                      | `<nixos-hardware/omen/en00015p>`                   |
 | [One-Netbook OneNetbook 4](onenetbook/4)                            | `<nixos-hardware/onenetbook/4>`                    |
 | [PC Engines APU](pcengines/apu)                                     | `<nixos-hardware/pcengines/apu>`                   |
 | [PINE64 Pinebook Pro](pine64/pinebook-pro/)                         | `<nixos-hardware/pine64/pinebook-pro>`             |
@@ -185,9 +200,3 @@ See code for all available configurations.
 | [System76 Darter Pro 6](system76/darp6)                             | `<nixos-hardware/system76/darp6>`                  |
 | [Toshiba Chromebook 2 `swanky`](toshiba/swanky)                     | `<nixos-hardware/toshiba/swanky>`                  |
 | [Tuxedo InfinityBook v4](tuxedo/infinitybook/v4)                    | `<nixos-hardware/tuxedo/infinitybook/v4>`          |
-
-## How to contribute a new device profile
-
-1. Add your device profile expression in the appropriate directory
-2. Link it in the table in README.md and in flake.nix
-3. Run ./tests/run.py to test it. The test script script will parse all the profiles from the README.md
