@@ -116,6 +116,7 @@ See code for all available configurations.
 | [Framework 12th Gen Intel Core](framework/12th-gen-intel)           | `<nixos-hardware/framework/12th-gen-intel>`        |
 | [FriendlyARM NanoPC-T4](friendlyarm/nanopc-t4)                      | `<nixos-hardware/friendlyarm/nanopc-t4>`           |
 | [GPD MicroPC](gpd/micropc)                                          | `<nixos-hardware/gpd/micropc>`                     |
+| [GPD Pocket 3](gpd/pocket-3)                                        | `<nixos-hardware/gpd/pocket-3>`                     |
 | [Google Pixelbook](google/pixelbook)                                | `<nixos-hardware/google/pixelbook>`                |
 | [HP Elitebook 2560p](hp/elitebook/2560p)                            | `<nixos-hardware/hp/elitebook/2560p>`              |
 | [Intel NUC 8i7BEH](intel/nuc/8i7beh/)                               | `<nixos-hardware/intel/nuc/8i7beh>`                |
@@ -192,6 +193,7 @@ See code for all available configurations.
 | [Raspberry Pi 2](raspberry-pi/2)                                    | `<nixos-hardware/raspberry-pi/2>`                  |
 | [Raspberry Pi 4](raspberry-pi/4)                                    | `<nixos-hardware/raspberry-pi/4>`                  |
 | [Samsung Series 9 NP900X3C](samsung/np900x3c)                       | `<nixos-hardware/samsung/np900x3c>`                |
+| [StarFive VisionFive v1](starfive/visionfive/v1)                    | `<nixos-hardware/starfive/visionfive/v1>`          |
 | [Supermicro A1SRi-2758F](supermicro/a1sri-2758f)                    | `<nixos-hardware/supermicro/a1sri-2758f>`          |
 | [Supermicro M11SDV-8C-LN4F](supermicro/m11sdv-8c-ln4f)              | `<nixes-hardware/supermicro/m11sdv-8c-ln4f>`       |
 | [Supermicro X10SLL-F](supermicro/x10sll-f)                          | `<nixos-hardware/supermicro/x10sll-f>`             |
