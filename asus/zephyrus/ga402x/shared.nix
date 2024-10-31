@@ -37,6 +37,10 @@ in {
     # After the first successful hibernate, it will work as expected, however.
     # NOTE: I'm not actually sure what this device, as neither the touchpad nor the M1-M4 keys cause a wake-up.
     ite-device.wakeup.enable = mkEnableOption "Enable power wakeup on the internal USB keyboard-like device (8295 ITE Device) on Zephyrus GA402X";
+
+    nvidia.autosuspend.enable = (
+      mkEnableOption "Enable power auto-suspend by default on the NVidia device"
+    ) // { default = true; };
   };
 
   config = mkMerge [
@@ -82,6 +86,28 @@ in {
         # Otherwise on certain kernel-versions, it will tend to cause the laptop to immediately wake-up when suspending.
         # ACTION=="add|change", SUBSYSTEM=="usb", DRIVER="usb", TEST="power/wakeup", ATTR{idVendor}=="0b05", ATTR{idProduct}=="193b", ATTR{power/wakeup}="disabled"
         ACTION=="add|change", SUBSYSTEM=="usb", ATTR{idVendor}=="0b05", ATTR{idProduct}=="193b", ATTR{power/wakeup}="disabled"
+      '';
+    })
+
+    (mkIf (! cfg.nvidia.autosuspend.enable) {
+      services.udev.extraRules = ''
+        # Enable power auto-suspend on the NVidia device
+
+        # Remove NVIDIA USB xHCI Host Controller devices, if present
+        # ACTION=="add|change", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0c0330", ATTR{power/control}="auto", ATTR{remove}="1"
+        ACTION=="add|change", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0c0330", ATTR{power/control}="auto"
+
+        # Remove NVIDIA USB Type-C UCSI devices, if present
+        # ACTION=="add|change", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0c8000", ATTR{power/control}="auto", ATTR{remove}="1"
+        ACTION=="add|change", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0c8000", ATTR{power/control}="auto"
+
+        # Remove NVIDIA Audio devices, if present
+        # ACTION=="add|change", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x040300", ATTR{power/control}="auto", ATTR{remove}="1"
+        ACTION=="add|change", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x040300", ATTR{power/control}="auto"
+
+        # Remove NVIDIA VGA/3D controller devices
+        # ACTION=="add|change", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x03[0-9]*", ATTR{power/control}="auto", ATTR{remove}="1"
+        ACTION=="add|change", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x03[0-9]*", ATTR{power/control}="auto"
       '';
     })
 
