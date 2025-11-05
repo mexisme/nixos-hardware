@@ -25,7 +25,5 @@
       ##    https://www.phoronix.com/news/More-s2idle-Rembrandt-Linux
       "acpi.prefer_microsoft_dsm_guid=1"
     ];
-
-    blacklistedKernelModules = [ "nouveau" ];
   };
 }

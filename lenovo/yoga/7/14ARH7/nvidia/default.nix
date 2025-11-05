@@ -1,6 +1,9 @@
 # Including this file will enable the NVidia driver, and PRIME offload
 
-{ lib, pkgs, ... }:
+{ lib,
+  pkgs,
+  ...
+}:
 
 let
   inherit (lib) mkDefault;
@@ -16,20 +19,26 @@ in
   ];
 
   # NVIDIA GeForce RTX 3050 Mobile (Ampere)
+ 
+  boot = {
+    blacklistedKernelModules = [ "nouveau" ];
+  };
+
+  # Also in nvidia/default.nix
   services.xserver.videoDrivers = mkDefault [ "nvidia" ];
 
   hardware = {
     ## Enable the Nvidia card, as well as Prime and Offload:
-    amdgpu.initrd.enable = true;
+    amdgpu.initrd.enable = mkDefault true;
 
     nvidia = {
-      modesetting.enable = true;
-      nvidiaSettings = true;
+      modesetting.enable = mkDefault true;
+      nvidiaSettings = mkDefault true;
 
       prime = {
         offload = {
-          enable = true;
-          enableOffloadCmd = true;
+          enable = mkDefault true;
+          enableOffloadCmd = mkDefault true;
         };
         amdgpuBusId = "PCI:4:0:0";
         nvidiaBusId = "PCI:1:0:0";
