@@ -6,6 +6,10 @@
 }:
 
 let
+  inherit (builtins)
+    attrNames
+    ;
+
   inherit (lib)
     mkDefault
     mkOption
@@ -13,31 +17,29 @@ let
     versions
     ;
 
-  # Set the version and hash for the kernel sources
-  srcVersion =
-    with config.hardware.microsoft-surface;
-    if kernelVersion == "longterm" then
-      "6.12.19"
-    else if kernelVersion == "stable" then
-      "6.18.8"
-    else
-      abort "Invalid kernel version: ${kernelVersion}";
+  supportedKernels =
+    let
+      lts-kernel = {
+        version = "6.18.10";
+        hash = "sha256-1tN3FhdBraL6so7taRQyd2NKKuteOIPlDAMViO3kjt4=";
+      };
 
-  srcHash =
-    with config.hardware.microsoft-surface;
-    if kernelVersion == "longterm" then
-      "sha256-1zvwV77ARDSxadG2FkGTb30Ml865I6KB8y413U3MZTE="
-    else if kernelVersion == "stable" then
-      "sha256-N/DF1cJCwdYE6H1I8IeV6GGlqF9yW0yhHQpTjxL/jP8="
-    else
-      abort "Invalid kernel version: ${kernelVersion}";
+    in
+    {
+      "longterm" = lts-kernel;
+      "stable" = lts-kernel;
+    };
+
+  # Set the version and hash for the kernel sources
+  srcVersion = supportedKernels.${config.hardware.microsoft-surface.kernelVersion}.version;
+  srcHash = supportedKernels.${config.hardware.microsoft-surface.kernelVersion}.hash;
 
   # Fetch the latest linux-surface patches
   linux-surface = pkgs.fetchFromGitHub {
     owner = "linux-surface";
     repo = "linux-surface";
-    rev = "faedd344762f9db3fe3c79e4f085d4ca7891e0c8"; # debian-6.18.8-1
-    hash = "sha256-2t5tMvne8W1q/hCO+O5XfuHj6DAzO6iKtCC6egXsWWM=";
+    rev = "506b68ae0081d5d3ecd58ac426e0c02f28d45e61";
+    hash = "sha256-j0mGzl5mKWN/bbWNyGGBkeicLzLfrEYhSScXpX1QFe8=";
   };
 
   # Fetch and build the kernel
@@ -61,10 +63,7 @@ in
 {
   options.hardware.microsoft-surface.kernelVersion = mkOption {
     description = "Kernel Version to use (patched for MS Surface)";
-    type = types.enum [
-      "longterm"
-      "stable"
-    ];
+    type = types.enum (attrNames supportedKernels);
     default = "longterm";
   };
 
