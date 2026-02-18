@@ -11,5 +11,4 @@
   # DPM (Dynamic Power Management) did cause boot hangs
   boot.kernelParams = [ "radeon.dpm=0" ];
 
-  hardware.enableRedistributableFirmware = lib.mkDefault true;
 }
