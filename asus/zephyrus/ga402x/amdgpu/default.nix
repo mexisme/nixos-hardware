@@ -11,7 +11,7 @@ let
 in
 {
   imports = [
-    ../shared.nix
+    ../../../shared
   ];
 
   options.hardware.asus.zephyrus.ga402x.amdgpu = {

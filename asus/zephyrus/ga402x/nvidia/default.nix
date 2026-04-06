@@ -10,7 +10,7 @@ let
 in
 {
   imports = [
-    ../shared.nix
+    ../../../shared
     ## "prime.nix" loads this, aleady:
     # ../../../common/gpu/nvidia
     ../../../../common/gpu/nvidia/prime.nix
