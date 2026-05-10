@@ -20,8 +20,8 @@ let
   supportedKernels =
     let
       lts-kernel = {
-        version = "6.19.8";
-        hash = "sha256-qtpHItuLz6C5cyhRhW1AUIK2pPouOrBnvo2xfN0RWzg=";
+        version = "6.19.14";
+        hash = "sha256-zei/Zzm+Sgd3/tu7pTMLgYjFVoDEWpIqTfoonL7G8YU=";
       };
 
     in
