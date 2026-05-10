@@ -38,8 +38,8 @@ let
   linux-surface = pkgs.fetchFromGitHub {
     owner = "linux-surface";
     repo = "linux-surface";
-    rev = "debian-6.19.8-1";
-    hash = "sha256-FY8zblKKJca2pfFr8gbl1+zk1B89FgzEYYSxDIzmQgA=";
+    rev = "bf1921fc63f33d03a007fb38c4f88ff7e7bc1a55";
+    hash = "sha256-AV+J1iKpA4PEsX9oVUTGlzGerTWTermia3aJSZxuu/w=";
   };
 
   # Fetch and build the kernel
